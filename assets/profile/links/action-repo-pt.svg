@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="156" height="44" viewBox="0 0 156 44" role="img" aria-labelledby="title-link-action-repo-pt desc-link-action-repo-pt">
+  <title id="title-link-action-repo-pt">REPOSITÓRIO ↗</title>
+  <desc id="desc-link-action-repo-pt">Abyss // Silk &amp; Spirit button: REPOSITÓRIO ↗</desc>
+<rect x="0.5" y="6.5" width="155" height="31" fill="#10121a" stroke="#d4b483" stroke-opacity="0.7" stroke-width="1"/>
+<rect x="1" y="7" width="2" height="30" fill="#d4b483" fill-opacity="0.9"/>
+<path d="M150.5 6.5 L155.5 6.5 L155.5 11.5" fill="none" stroke="#d4b483" stroke-opacity="0.65" stroke-width="1"/>
+<circle cx="13" cy="22" r="2" fill="#d4b483"/>
+<text x="22" y="25.5" fill="#ececef" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" letter-spacing="1.1">REPOSITÓRIO ↗</text>
+</svg>

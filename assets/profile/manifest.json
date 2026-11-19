@@ -1,0 +1,709 @@
+{
+  "files": {
+    "assets/profile/footer-en-static.svg": {
+      "bytes": 3620,
+      "hash8": "e48cb003",
+      "kind": "footer",
+      "sha256": "e48cb0030c7343cf86490f3b70d0382ddc01000bf9f0fdd3d8041ebdfbad2e87",
+      "static": true
+    },
+    "assets/profile/footer-en.svg": {
+      "bytes": 3965,
+      "hash8": "7ad4aadd",
+      "kind": "footer",
+      "sha256": "7ad4aadd5686ffb0b8a72e8ae02f9c89c280cb4b813620313591031b9d974d5d",
+      "static": false
+    },
+    "assets/profile/footer-pt-static.svg": {
+      "bytes": 3629,
+      "hash8": "0e596727",
+      "kind": "footer",
+      "sha256": "0e596727728f19412a885c1ad90de3a7a10ad702c09ecd1f1b4c8a9e775ea80d",
+      "static": true
+    },
+    "assets/profile/footer-pt.svg": {
+      "bytes": 3974,
+      "hash8": "e314d533",
+      "kind": "footer",
+      "sha256": "e314d533fcb8294dbe2fe6401aaf4e830c000495447d43a778b34ba5bda8c8fc",
+      "static": false
+    },
+    "assets/profile/hero-en-mobile-static.svg": {
+      "bytes": 5769,
+      "hash8": "f28cd73b",
+      "kind": "hero",
+      "sha256": "f28cd73b6d6aa691ed0638039ab23045d61528d2cabfc0b59333f0f5c6e1fba1",
+      "static": true
+    },
+    "assets/profile/hero-en-mobile.svg": {
+      "bytes": 6457,
+      "hash8": "732f4155",
+      "kind": "hero",
+      "sha256": "732f4155c9d11d817d97040c1de8021f11d248d86e52ec8190d6b19513b64620",
+      "static": false
+    },
+    "assets/profile/hero-en-static.svg": {
+      "bytes": 6885,
+      "hash8": "67e89c3f",
+      "kind": "hero",
+      "sha256": "67e89c3f9b86046dfdf334a2710c8bafb69e4b2443c66a1f329cf66a5737ba7c",
+      "static": true
+    },
+    "assets/profile/hero-en.svg": {
+      "bytes": 7892,
+      "hash8": "56fb22e0",
+      "kind": "hero",
+      "sha256": "56fb22e079ca2b4759fbce15d4707d89aab5c8746e4ee31784c0c039f56b3f52",
+      "static": false
+    },
+    "assets/profile/hero-pt-mobile-static.svg": {
+      "bytes": 5774,
+      "hash8": "d4256e40",
+      "kind": "hero",
+      "sha256": "d4256e40200200de13a1782be95a7cee6b1ca68017291f7414380fd2e31d7247",
+      "static": true
+    },
+    "assets/profile/hero-pt-mobile.svg": {
+      "bytes": 6462,
+      "hash8": "03f21e8b",
+      "kind": "hero",
+      "sha256": "03f21e8b83195aa1e499749e26a2c451c60cdb4fd7b1c56cc1863dd8ea416c27",
+      "static": false
+    },
+    "assets/profile/hero-pt-static.svg": {
+      "bytes": 6904,
+      "hash8": "71d37a50",
+      "kind": "hero",
+      "sha256": "71d37a504009e3e35262412921ed8cc3009f0955160d3c9e667f83b8819fedad",
+      "static": true
+    },
+    "assets/profile/hero-pt.svg": {
+      "bytes": 7911,
+      "hash8": "0c7aa128",
+      "kind": "hero",
+      "sha256": "0c7aa1284b0341bd9f61bd2250c2b0dca39f1b724e30c949611b3a9b07bdbef0",
+      "static": false
+    },
+    "assets/profile/links/action-live-en.svg": {
+      "bytes": 875,
+      "hash8": "087150f2",
+      "kind": "link",
+      "sha256": "087150f2c85517714ebe811b6eed1d4ff2321e40accbddf5ba06a8e979cead23",
+      "static": true
+    },
+    "assets/profile/links/action-live-pt.svg": {
+      "bytes": 908,
+      "hash8": "76f21854",
+      "kind": "link",
+      "sha256": "76f2185458b314cc16f5811259c4dae4ae650e80ed99fa94f0a7fd94b0070acd",
+      "static": true
+    },
+    "assets/profile/links/action-repo-en.svg": {
+      "bytes": 881,
+      "hash8": "eda64c57",
+      "kind": "link",
+      "sha256": "eda64c57dc9e8c7f988b03663078ff2a4b4a7782e3a8c2c6f88b58ab81c814b5",
+      "static": true
+    },
+    "assets/profile/links/action-repo-pt.svg": {
+      "bytes": 887,
+      "hash8": "f80589e0",
+      "kind": "link",
+      "sha256": "f80589e00b3d157f50bc5c65b3a7ee9778da671ee497b307e2067a0ae0d7bf3f",
+      "static": true
+    },
+    "assets/profile/links/contact-github.svg": {
+      "bytes": 1261,
+      "hash8": "89ecddb7",
+      "kind": "link",
+      "sha256": "89ecddb70a62b015b12e4f459f19e1b955f761f68984f5d9d987cb18b3ca10ab",
+      "static": true
+    },
+    "assets/profile/links/contact-linkedin.svg": {
+      "bytes": 1281,
+      "hash8": "fd214e76",
+      "kind": "link",
+      "sha256": "fd214e7675e2c6e218607c33dfa7473e0dc47890edb059309a6b91b545f95511",
+      "static": true
+    },
+    "assets/profile/links/lang-en.svg": {
+      "bytes": 874,
+      "hash8": "6ed3cbef",
+      "kind": "link",
+      "sha256": "6ed3cbefeac6fac4de4c23acd355d4990ba3af24106bed6ab72988f342d4de7c",
+      "static": true
+    },
+    "assets/profile/links/lang-pt.svg": {
+      "bytes": 884,
+      "hash8": "81341155",
+      "kind": "link",
+      "sha256": "813411559ae0be01efcb37448f77c0fd1130893bf1220425bc850a74d0b4f767",
+      "static": true
+    },
+    "assets/profile/links/mode-animated-en.svg": {
+      "bytes": 915,
+      "hash8": "35702b11",
+      "kind": "link",
+      "sha256": "35702b1142be50dc95afd4689859471f19459a1b26aa63df60049d4323059a6d",
+      "static": true
+    },
+    "assets/profile/links/mode-animated-pt.svg": {
+      "bytes": 936,
+      "hash8": "6f58f288",
+      "kind": "link",
+      "sha256": "6f58f28812322dde580954147e7b9bb4d7f1814caf42b730ded5e39fb1419bea",
+      "static": true
+    },
+    "assets/profile/links/mode-static-en.svg": {
+      "bytes": 924,
+      "hash8": "8f7ce428",
+      "kind": "link",
+      "sha256": "8f7ce428e492b83a0d4510f2c549acd46b124b412689472b793b5108972506b5",
+      "static": true
+    },
+    "assets/profile/links/mode-static-pt.svg": {
+      "bytes": 921,
+      "hash8": "d0e22440",
+      "kind": "link",
+      "sha256": "d0e224408475e109ae33bcc4e956bf4cc676533366c571590a841f9695bfa26e",
+      "static": true
+    },
+    "assets/profile/links/nav-beyond-en.svg": {
+      "bytes": 946,
+      "hash8": "9cd88f64",
+      "kind": "link",
+      "sha256": "9cd88f64062e815ee51826cf09a806aec014232063c5ed3de94175ae24e318c9",
+      "static": true
+    },
+    "assets/profile/links/nav-beyond-pt.svg": {
+      "bytes": 946,
+      "hash8": "397232c6",
+      "kind": "link",
+      "sha256": "397232c67b1d470d70f6d5fb6538f55ce3836b16db20eb9ab6b2c6bb65d9085e",
+      "static": true
+    },
+    "assets/profile/links/nav-contact-en.svg": {
+      "bytes": 956,
+      "hash8": "72a941c8",
+      "kind": "link",
+      "sha256": "72a941c83aab706b0263f85ace22d3eb1f599b1980a625f5d79346c8cca402c3",
+      "static": true
+    },
+    "assets/profile/links/nav-contact-pt.svg": {
+      "bytes": 956,
+      "hash8": "75ef2bae",
+      "kind": "link",
+      "sha256": "75ef2bae8a66d30fec073c5196a9a456dfc14e61b95615a0ccb29d1f0816e639",
+      "static": true
+    },
+    "assets/profile/links/nav-experience-en.svg": {
+      "bytes": 977,
+      "hash8": "0bf7a810",
+      "kind": "link",
+      "sha256": "0bf7a81016aaa33ac7b7835e05316cacc6be75325b3d88924fff53b1369d0ef5",
+      "static": true
+    },
+    "assets/profile/links/nav-experience-pt.svg": {
+      "bytes": 980,
+      "hash8": "4d01f83c",
+      "kind": "link",
+      "sha256": "4d01f83cc516c0f42b2ba526381d5110c2aa9ec36c3144cd941f9e2522b7dbf1",
+      "static": true
+    },
+    "assets/profile/links/nav-projects-en.svg": {
+      "bytes": 963,
+      "hash8": "fa020d08",
+      "kind": "link",
+      "sha256": "fa020d08716ebaf8489751c7c90f9ef21c2f84952af544800fbe287e057d2051",
+      "static": true
+    },
+    "assets/profile/links/nav-projects-pt.svg": {
+      "bytes": 963,
+      "hash8": "e80389e9",
+      "kind": "link",
+      "sha256": "e80389e96d80de2fa001e40f3a231c7af4dec27dfbba4bf04bbde7865ebbe2e7",
+      "static": true
+    },
+    "assets/profile/links/nav-stack-en.svg": {
+      "bytes": 942,
+      "hash8": "47176fb8",
+      "kind": "link",
+      "sha256": "47176fb8128524591e0b5b0458c2aa03b6712431d3db08c069c939a135b7cdf0",
+      "static": true
+    },
+    "assets/profile/links/nav-stack-pt.svg": {
+      "bytes": 942,
+      "hash8": "41f88091",
+      "kind": "link",
+      "sha256": "41f88091035f5404b09e2eaea21607ae08c5e786f837a6fa577426255b1d9eec",
+      "static": true
+    },
+    "assets/profile/links/status-private-en.svg": {
+      "bytes": 1169,
+      "hash8": "18106bb0",
+      "kind": "link",
+      "sha256": "18106bb01491db4fda397118221b1fefade1a26e7c07f0105959b596702520af",
+      "static": true
+    },
+    "assets/profile/links/status-private-pt.svg": {
+      "bytes": 1166,
+      "hash8": "41161924",
+      "kind": "link",
+      "sha256": "411619241d40e0f1cda8d2d5bcd88e74c8f6ef97a6e9e96291fdaf9889dc8cb1",
+      "static": true
+    },
+    "assets/profile/projects/project-01-psychat-en-static.svg": {
+      "bytes": 6901,
+      "hash8": "5457f8a9",
+      "kind": "project",
+      "sha256": "5457f8a973b6a11f2308352d0ab79d3ad56c4cb38da1819f7cf60668fcddeb94",
+      "static": true
+    },
+    "assets/profile/projects/project-01-psychat-en.svg": {
+      "bytes": 7429,
+      "hash8": "13827d75",
+      "kind": "project",
+      "sha256": "13827d752e545b016a7446596630f71076ddfc039f31f21767f67e891fe03a70",
+      "static": false
+    },
+    "assets/profile/projects/project-01-psychat-pt-static.svg": {
+      "bytes": 6948,
+      "hash8": "bf1d68d7",
+      "kind": "project",
+      "sha256": "bf1d68d7ad39145f197e1b0afb28bee61e3a95b70507d64badf5e31496e1c3c7",
+      "static": true
+    },
+    "assets/profile/projects/project-01-psychat-pt.svg": {
+      "bytes": 7476,
+      "hash8": "b2ffb26c",
+      "kind": "project",
+      "sha256": "b2ffb26c1f14a92ffce9cda4d759e71d0ad0d490b846e3c8090a541261fb414a",
+      "static": false
+    },
+    "assets/profile/projects/project-02-minhas-financas-en-static.svg": {
+      "bytes": 7925,
+      "hash8": "1c5c46e3",
+      "kind": "project",
+      "sha256": "1c5c46e3539b34ad5264220a41f50bd8b4ee25981762480107a6140ce7172d79",
+      "static": true
+    },
+    "assets/profile/projects/project-02-minhas-financas-en.svg": {
+      "bytes": 8434,
+      "hash8": "ae4f7883",
+      "kind": "project",
+      "sha256": "ae4f7883d8aa1b6948cf6a98d1ee2e022a495316711b0f24fcb12e1fcf3e4859",
+      "static": false
+    },
+    "assets/profile/projects/project-02-minhas-financas-pt-static.svg": {
+      "bytes": 7955,
+      "hash8": "4f913267",
+      "kind": "project",
+      "sha256": "4f913267e0cb4d66955d5d0e5dc64411014c20db23787907031dc19433ded2dc",
+      "static": true
+    },
+    "assets/profile/projects/project-02-minhas-financas-pt.svg": {
+      "bytes": 8464,
+      "hash8": "7e7a4040",
+      "kind": "project",
+      "sha256": "7e7a40401f26cc2297ec8966ddf8ce84ae240b995b5c06df2463b93645e3d1c8",
+      "static": false
+    },
+    "assets/profile/projects/project-03-nexo-rh-en-static.svg": {
+      "bytes": 8459,
+      "hash8": "4ea8ad78",
+      "kind": "project",
+      "sha256": "4ea8ad78ce4d17deeb5fec912626132507ba970194f326d481cfd1beac0ade18",
+      "static": true
+    },
+    "assets/profile/projects/project-03-nexo-rh-en.svg": {
+      "bytes": 8968,
+      "hash8": "fbe00825",
+      "kind": "project",
+      "sha256": "fbe00825b8598b6f79482f7f16e04f78fba706bda049463ae6de60c07187844d",
+      "static": false
+    },
+    "assets/profile/projects/project-03-nexo-rh-pt-static.svg": {
+      "bytes": 8468,
+      "hash8": "7220444e",
+      "kind": "project",
+      "sha256": "7220444eee2f0e8c245cb1ed845166c1bc93bb2fcc5df4e880e71b2551b55580",
+      "static": true
+    },
+    "assets/profile/projects/project-03-nexo-rh-pt.svg": {
+      "bytes": 8977,
+      "hash8": "a4475226",
+      "kind": "project",
+      "sha256": "a4475226c658447dea7786077ab68d32ccd454b2a46b2e4bce839dcd746e56a3",
+      "static": false
+    },
+    "assets/profile/projects/project-04-media-hub-en-static.svg": {
+      "bytes": 7245,
+      "hash8": "4658ac55",
+      "kind": "project",
+      "sha256": "4658ac555f7ba78527465ad725d16fd3518967da376fe525860fa757604d3fbe",
+      "static": true
+    },
+    "assets/profile/projects/project-04-media-hub-en.svg": {
+      "bytes": 7771,
+      "hash8": "6b84d8b8",
+      "kind": "project",
+      "sha256": "6b84d8b8fc7ab79b150b47a17136fdd64ae46bac6724b09139800b04c9310272",
+      "static": false
+    },
+    "assets/profile/projects/project-04-media-hub-pt-static.svg": {
+      "bytes": 7256,
+      "hash8": "05dc8098",
+      "kind": "project",
+      "sha256": "05dc8098e73e8b2e04d72c7f86e7175361fc44c5d5569c2dfba0cc4a6ef68d5d",
+      "static": true
+    },
+    "assets/profile/projects/project-04-media-hub-pt.svg": {
+      "bytes": 7782,
+      "hash8": "781a7994",
+      "kind": "project",
+      "sha256": "781a7994b13f24ca800ef530eaa23a1e5ef8e65920220ba5241f8d4e845b825e",
+      "static": false
+    },
+    "assets/profile/projects/project-05-rpg-table-en-static.svg": {
+      "bytes": 8905,
+      "hash8": "5c9d6798",
+      "kind": "project",
+      "sha256": "5c9d6798ab72ba12a4b309dce5a997d038bb6132dcb352b82f7c45dff9d304f8",
+      "static": true
+    },
+    "assets/profile/projects/project-05-rpg-table-en.svg": {
+      "bytes": 9433,
+      "hash8": "510fbf3a",
+      "kind": "project",
+      "sha256": "510fbf3aacd554b2895290b147d4af5b71c1f90dd6da21b889412594c1802f21",
+      "static": false
+    },
+    "assets/profile/projects/project-05-rpg-table-pt-static.svg": {
+      "bytes": 8915,
+      "hash8": "07f33f5b",
+      "kind": "project",
+      "sha256": "07f33f5b216405fc8ac32eb32f8e31dc62708db15c725b62bec9104046a959d6",
+      "static": true
+    },
+    "assets/profile/projects/project-05-rpg-table-pt.svg": {
+      "bytes": 9443,
+      "hash8": "947e644b",
+      "kind": "project",
+      "sha256": "947e644b3470c1bde4465cf9ae8ebc12944ac65b59c3fe28c3cd4c87346d8007",
+      "static": false
+    },
+    "assets/profile/stack/apache-hop.svg": {
+      "bytes": 1086,
+      "hash8": "44f9d335",
+      "kind": "stack",
+      "sha256": "44f9d335f8785eb5afd2dda568f141004c2106954f8773d5df5f51628bb5379c",
+      "static": true
+    },
+    "assets/profile/stack/cloudflare.svg": {
+      "bytes": 1071,
+      "hash8": "0a01120d",
+      "kind": "stack",
+      "sha256": "0a01120d7286621d68d0abecf9634ae89697abd36a9d133c33a7f0dcebdd5944",
+      "static": true
+    },
+    "assets/profile/stack/codeigniter-4.svg": {
+      "bytes": 1065,
+      "hash8": "25a3e53f",
+      "kind": "stack",
+      "sha256": "25a3e53f7a56fc8b240296d00822fd9b77ced0cd3b13d927850ac3494891be14",
+      "static": true
+    },
+    "assets/profile/stack/docker.svg": {
+      "bytes": 1216,
+      "hash8": "bdbfddd7",
+      "kind": "stack",
+      "sha256": "bdbfddd7d18a56e654d4cf97c629f26bc7bcc3078b98a891697fdf6084253b15",
+      "static": true
+    },
+    "assets/profile/stack/expo.svg": {
+      "bytes": 1020,
+      "hash8": "653a50d8",
+      "kind": "stack",
+      "sha256": "653a50d89779508a8cf6109247aaf7a6b9e5bf18348cd2cbe151191ae8f7957d",
+      "static": true
+    },
+    "assets/profile/stack/express.svg": {
+      "bytes": 1146,
+      "hash8": "4fb3f6a9",
+      "kind": "stack",
+      "sha256": "4fb3f6a9d0283d478f8982bcd84f5e79f63e1e9658bc134a25a93b9c45588a13",
+      "static": true
+    },
+    "assets/profile/stack/git-github.svg": {
+      "bytes": 1211,
+      "hash8": "d2df0a6f",
+      "kind": "stack",
+      "sha256": "d2df0a6fd0b3f7b315440f9920d5fc138030ba5bdfd40eb76c27a847fd019379",
+      "static": true
+    },
+    "assets/profile/stack/gitlab-cicd.svg": {
+      "bytes": 1056,
+      "hash8": "31bb66ee",
+      "kind": "stack",
+      "sha256": "31bb66ee22c2c0fe8128aa3005037c85bac4fc24e7ad2f64d2af40dbcb1ad8cc",
+      "static": true
+    },
+    "assets/profile/stack/java.svg": {
+      "bytes": 1127,
+      "hash8": "b7eb8686",
+      "kind": "stack",
+      "sha256": "b7eb8686769fc33b3131469dd0937cd530aa08022c5784a1fb629244adede1f1",
+      "static": true
+    },
+    "assets/profile/stack/javascript.svg": {
+      "bytes": 1195,
+      "hash8": "4ace13c3",
+      "kind": "stack",
+      "sha256": "4ace13c31ea891a83862946c9e20c4784f05e787fc244709d008978ce119a8c8",
+      "static": true
+    },
+    "assets/profile/stack/llm-apis.svg": {
+      "bytes": 1070,
+      "hash8": "655f33b0",
+      "kind": "stack",
+      "sha256": "655f33b01bc9011e3422b5be6f0243795ed401a943007decc3b8a1a86294cbc7",
+      "static": true
+    },
+    "assets/profile/stack/mongodb.svg": {
+      "bytes": 1042,
+      "hash8": "b5b13f6c",
+      "kind": "stack",
+      "sha256": "b5b13f6cee187ed7e1940d3cf7d8ab1808d894bc548cb4b6b3dfeeca2cde0a20",
+      "static": true
+    },
+    "assets/profile/stack/mysql.svg": {
+      "bytes": 1124,
+      "hash8": "57171b2e",
+      "kind": "stack",
+      "sha256": "57171b2e311fbcbe94acaa1b01536fda7ff60f204834f4d84d76c6f474481f1f",
+      "static": true
+    },
+    "assets/profile/stack/nativewind.svg": {
+      "bytes": 1096,
+      "hash8": "cd9883f2",
+      "kind": "stack",
+      "sha256": "cd9883f2f0ec4b3fa06aab0404fa6239747bfe237b8a54fb37cdf4f5c7ac9de7",
+      "static": true
+    },
+    "assets/profile/stack/nodejs.svg": {
+      "bytes": 1029,
+      "hash8": "34c7c924",
+      "kind": "stack",
+      "sha256": "34c7c9242fb8f77872f4ece7f16fa925507c1ddd5ffbeb87e61835b799563915",
+      "static": true
+    },
+    "assets/profile/stack/php.svg": {
+      "bytes": 1134,
+      "hash8": "64b0ba69",
+      "kind": "stack",
+      "sha256": "64b0ba69116c906fceef4d2baa86815182c62a54a80469b3c2d70ba31fa7f954",
+      "static": true
+    },
+    "assets/profile/stack/python.svg": {
+      "bytes": 1149,
+      "hash8": "d5c8ec83",
+      "kind": "stack",
+      "sha256": "d5c8ec83151204e10db06fb15fb5902c0ecd0676aabbdac0a120c8ea8aa2e450",
+      "static": true
+    },
+    "assets/profile/stack/react-native.svg": {
+      "bytes": 1152,
+      "hash8": "68b80453",
+      "kind": "stack",
+      "sha256": "68b80453361bc39a2024949e5452aa30d9e6b629a6c6c8ea43156e2e2bc23f5d",
+      "static": true
+    },
+    "assets/profile/stack/react.svg": {
+      "bytes": 1238,
+      "hash8": "08d4e993",
+      "kind": "stack",
+      "sha256": "08d4e9931f3587899069667bf0279338552d38001a933180fc5bbffd9f3c0ad3",
+      "static": true
+    },
+    "assets/profile/stack/sql.svg": {
+      "bytes": 1121,
+      "hash8": "5de8bffd",
+      "kind": "stack",
+      "sha256": "5de8bffd232abed3617667c50f8402c14bf0e44f4050c0966716fb70e601b653",
+      "static": true
+    },
+    "assets/profile/stack/supabase.svg": {
+      "bytes": 987,
+      "hash8": "8b55ba9a",
+      "kind": "stack",
+      "sha256": "8b55ba9acd3d1873c6378e61944dd6f22a3d35ed46b1842c866115b40754a06e",
+      "static": true
+    },
+    "assets/profile/stack/tailwind-css.svg": {
+      "bytes": 1113,
+      "hash8": "42735757",
+      "kind": "stack",
+      "sha256": "4273575739cd8c86944821220465bb2d7e06723cabf7f4e55ea2305fa2a086ec",
+      "static": true
+    },
+    "assets/profile/stack/typescript.svg": {
+      "bytes": 1193,
+      "hash8": "4eaa531b",
+      "kind": "stack",
+      "sha256": "4eaa531b008e82365d8137f0eea0a9807cad80c3a5bca25c868ff6583c45f8c2",
+      "static": true
+    },
+    "assets/profile/stack/vercel.svg": {
+      "bytes": 926,
+      "hash8": "357df7fc",
+      "kind": "stack",
+      "sha256": "357df7fc626bf481d7de68d25b782bd152222cb0aef03082faf1dfd3c68f31db",
+      "static": true
+    },
+    "assets/profile/stack/vite.svg": {
+      "bytes": 1027,
+      "hash8": "61699085",
+      "kind": "stack",
+      "sha256": "616990850b50760f9985e9a2e3cdd91d1cddd49ae92b62884ae33af454034782",
+      "static": true
+    }
+  },
+  "footers": {
+    "en": {
+      "animated": "assets/profile/footer-en.svg",
+      "static": "assets/profile/footer-en-static.svg"
+    },
+    "pt": {
+      "animated": "assets/profile/footer-pt.svg",
+      "static": "assets/profile/footer-pt-static.svg"
+    }
+  },
+  "heroes": {
+    "en": {
+      "desktop": "assets/profile/hero-en.svg",
+      "desktopStatic": "assets/profile/hero-en-static.svg",
+      "mobile": "assets/profile/hero-en-mobile.svg",
+      "mobileStatic": "assets/profile/hero-en-mobile-static.svg"
+    },
+    "pt": {
+      "desktop": "assets/profile/hero-pt.svg",
+      "desktopStatic": "assets/profile/hero-pt-static.svg",
+      "mobile": "assets/profile/hero-pt-mobile.svg",
+      "mobileStatic": "assets/profile/hero-pt-mobile-static.svg"
+    }
+  },
+  "links": {
+    "action-live-en": "assets/profile/links/action-live-en.svg",
+    "action-live-pt": "assets/profile/links/action-live-pt.svg",
+    "action-repo-en": "assets/profile/links/action-repo-en.svg",
+    "action-repo-pt": "assets/profile/links/action-repo-pt.svg",
+    "contact-github": "assets/profile/links/contact-github.svg",
+    "contact-linkedin": "assets/profile/links/contact-linkedin.svg",
+    "lang-en": "assets/profile/links/lang-en.svg",
+    "lang-pt": "assets/profile/links/lang-pt.svg",
+    "mode-animated-en": "assets/profile/links/mode-animated-en.svg",
+    "mode-animated-pt": "assets/profile/links/mode-animated-pt.svg",
+    "mode-static-en": "assets/profile/links/mode-static-en.svg",
+    "mode-static-pt": "assets/profile/links/mode-static-pt.svg",
+    "nav-beyond-en": "assets/profile/links/nav-beyond-en.svg",
+    "nav-beyond-pt": "assets/profile/links/nav-beyond-pt.svg",
+    "nav-contact-en": "assets/profile/links/nav-contact-en.svg",
+    "nav-contact-pt": "assets/profile/links/nav-contact-pt.svg",
+    "nav-experience-en": "assets/profile/links/nav-experience-en.svg",
+    "nav-experience-pt": "assets/profile/links/nav-experience-pt.svg",
+    "nav-projects-en": "assets/profile/links/nav-projects-en.svg",
+    "nav-projects-pt": "assets/profile/links/nav-projects-pt.svg",
+    "nav-stack-en": "assets/profile/links/nav-stack-en.svg",
+    "nav-stack-pt": "assets/profile/links/nav-stack-pt.svg",
+    "status-private-en": "assets/profile/links/status-private-en.svg",
+    "status-private-pt": "assets/profile/links/status-private-pt.svg"
+  },
+  "palette": {
+    "abyss": "#090a10",
+    "line": "#1c202e",
+    "mist": "#858b9c",
+    "silk": "#d4b483",
+    "soul": "#ececef",
+    "spirit": "#7ce8ff",
+    "surface": "#10121a"
+  },
+  "projects": {
+    "01-psychat": {
+      "en": {
+        "animated": "assets/profile/projects/project-01-psychat-en.svg",
+        "static": "assets/profile/projects/project-01-psychat-en-static.svg"
+      },
+      "pt": {
+        "animated": "assets/profile/projects/project-01-psychat-pt.svg",
+        "static": "assets/profile/projects/project-01-psychat-pt-static.svg"
+      }
+    },
+    "02-minhas-financas": {
+      "en": {
+        "animated": "assets/profile/projects/project-02-minhas-financas-en.svg",
+        "static": "assets/profile/projects/project-02-minhas-financas-en-static.svg"
+      },
+      "pt": {
+        "animated": "assets/profile/projects/project-02-minhas-financas-pt.svg",
+        "static": "assets/profile/projects/project-02-minhas-financas-pt-static.svg"
+      }
+    },
+    "03-nexo-rh": {
+      "en": {
+        "animated": "assets/profile/projects/project-03-nexo-rh-en.svg",
+        "static": "assets/profile/projects/project-03-nexo-rh-en-static.svg"
+      },
+      "pt": {
+        "animated": "assets/profile/projects/project-03-nexo-rh-pt.svg",
+        "static": "assets/profile/projects/project-03-nexo-rh-pt-static.svg"
+      }
+    },
+    "04-media-hub": {
+      "en": {
+        "animated": "assets/profile/projects/project-04-media-hub-en.svg",
+        "static": "assets/profile/projects/project-04-media-hub-en-static.svg"
+      },
+      "pt": {
+        "animated": "assets/profile/projects/project-04-media-hub-pt.svg",
+        "static": "assets/profile/projects/project-04-media-hub-pt-static.svg"
+      }
+    },
+    "05-rpg-table": {
+      "en": {
+        "animated": "assets/profile/projects/project-05-rpg-table-en.svg",
+        "static": "assets/profile/projects/project-05-rpg-table-en-static.svg"
+      },
+      "pt": {
+        "animated": "assets/profile/projects/project-05-rpg-table-pt.svg",
+        "static": "assets/profile/projects/project-05-rpg-table-pt-static.svg"
+      }
+    }
+  },
+  "stack": {
+    "apache-hop": "assets/profile/stack/apache-hop.svg",
+    "cloudflare": "assets/profile/stack/cloudflare.svg",
+    "codeigniter-4": "assets/profile/stack/codeigniter-4.svg",
+    "docker": "assets/profile/stack/docker.svg",
+    "expo": "assets/profile/stack/expo.svg",
+    "express": "assets/profile/stack/express.svg",
+    "git-github": "assets/profile/stack/git-github.svg",
+    "gitlab-cicd": "assets/profile/stack/gitlab-cicd.svg",
+    "java": "assets/profile/stack/java.svg",
+    "javascript": "assets/profile/stack/javascript.svg",
+    "llm-apis": "assets/profile/stack/llm-apis.svg",
+    "mongodb": "assets/profile/stack/mongodb.svg",
+    "mysql": "assets/profile/stack/mysql.svg",
+    "nativewind": "assets/profile/stack/nativewind.svg",
+    "nodejs": "assets/profile/stack/nodejs.svg",
+    "php": "assets/profile/stack/php.svg",
+    "python": "assets/profile/stack/python.svg",
+    "react": "assets/profile/stack/react.svg",
+    "react-native": "assets/profile/stack/react-native.svg",
+    "sql": "assets/profile/stack/sql.svg",
+    "supabase": "assets/profile/stack/supabase.svg",
+    "tailwind-css": "assets/profile/stack/tailwind-css.svg",
+    "typescript": "assets/profile/stack/typescript.svg",
+    "vercel": "assets/profile/stack/vercel.svg",
+    "vite": "assets/profile/stack/vite.svg"
+  }
+}

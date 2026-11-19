@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="142" height="60" viewBox="0 0 142 60" role="img" aria-labelledby="title-stack-nativewind desc-stack-nativewind">
+  <title id="title-stack-nativewind">NativeWind</title>
+  <desc id="desc-stack-nativewind">NativeWind — MOBILE · CSS</desc>
+<rect x="0.5" y="0.5" width="141" height="59" fill="#10121a" stroke="#1c202e" stroke-width="1"/>
+<rect x="1" y="1" width="2" height="58" fill="#7ce8ff" fill-opacity="0.8"/>
+<g transform="translate(11, 19)"><rect x="4" y="2.5" width="14" height="17" fill="none" stroke="#ececef" stroke-width="1.1"/><path d="M6.5 11 C8 9 10 9 11 11 C12 13 14 13 15.5 11" fill="none" stroke="#7ce8ff" stroke-width="1.4"/></g>
+<text x="41" y="28" fill="#ececef" font-family="&apos;Inter&apos;, -apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif" font-size="11" font-weight="600">NativeWind</text>
+<text x="41" y="44" fill="#858b9c" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8" letter-spacing="0.6">MOBILE · CSS</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="142" height="60" viewBox="0 0 142 60" role="img" aria-labelledby="title-stack-git-github desc-stack-git-github">
+  <title id="title-stack-git-github">Git &amp; GitHub</title>
+  <desc id="desc-stack-git-github">Git &amp; GitHub — VCS · WORKFLOW</desc>
+<rect x="0.5" y="0.5" width="141" height="59" fill="#10121a" stroke="#1c202e" stroke-width="1"/>
+<rect x="1" y="1" width="2" height="58" fill="#7ce8ff" fill-opacity="0.8"/>
+<g transform="translate(11, 19)"><line x1="6" y1="4" x2="6" y2="18" stroke="#ececef" stroke-width="1.3"/><path d="M6 12 C11 12 16 11 16 6" fill="none" stroke="#7ce8ff" stroke-width="1.3"/><circle cx="6" cy="4" r="2" fill="#ececef"/><circle cx="6" cy="18" r="2" fill="#ececef"/><circle cx="16" cy="6" r="2" fill="#7ce8ff"/></g>
+<text x="41" y="28" fill="#ececef" font-family="&apos;Inter&apos;, -apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif" font-size="10" font-weight="600">Git &amp; GitHub</text>
+<text x="41" y="44" fill="#858b9c" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8" letter-spacing="0.6">VCS · WORKFLOW</text>
+</svg>

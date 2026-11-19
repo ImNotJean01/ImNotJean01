@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="142" height="60" viewBox="0 0 142 60" role="img" aria-labelledby="title-stack-sql desc-stack-sql">
+  <title id="title-stack-sql">SQL</title>
+  <desc id="desc-stack-sql">SQL — DATA · SCHEMA</desc>
+<rect x="0.5" y="0.5" width="141" height="59" fill="#10121a" stroke="#1c202e" stroke-width="1"/>
+<rect x="1" y="1" width="2" height="58" fill="#d4b483" fill-opacity="0.8"/>
+<g transform="translate(11, 19)"><rect x="4" y="3" width="14" height="4" fill="none" stroke="#d4b483" stroke-width="1.2"/><rect x="4" y="9" width="14" height="4" fill="none" stroke="#ececef" stroke-width="1.2"/><rect x="4" y="15" width="14" height="4" fill="none" stroke="#d4b483" stroke-width="1.2"/></g>
+<text x="41" y="28" fill="#ececef" font-family="&apos;Inter&apos;, -apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif" font-size="11" font-weight="600">SQL</text>
+<text x="41" y="44" fill="#858b9c" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8" letter-spacing="0.6">DATA · SCHEMA</text>
+</svg>

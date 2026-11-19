@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="270" viewBox="0 0 960 270" role="img" aria-labelledby="title-project-02-minhas-financas-pt-static desc-project-02-minhas-financas-pt-static">
+  <title id="title-project-02-minhas-financas-pt-static">02 / Minhas Finanças (PT)</title>
+  <desc id="desc-project-02-minhas-financas-pt-static">Capa SVG do projeto 02 Minhas Finanças — fluxo financeiro com Supabase Auth e Postgres</desc>
+<rect x="0" y="0" width="960" height="270" fill="#090a10"/>
+<rect x="0.5" y="0.5" width="959" height="269" fill="#10121a" stroke="#1c202e" stroke-width="1"/>
+<rect x="1" y="20" width="2" height="230" fill="#d4b483" fill-opacity="0.65"/>
+<g fill="none" stroke-width="1" stroke-opacity="0.65"><path d="M0.5 8.5 L0.5 0.5 L8.5 0.5" stroke="#d4b483"/><path d="M951.5 0.5 L959.5 0.5 L959.5 8.5" stroke="#7ce8ff"/><path d="M0.5 261.5 L0.5 269.5 L8.5 269.5" stroke="#d4b483"/><path d="M951.5 269.5 L959.5 269.5 L959.5 261.5" stroke="#7ce8ff"/></g>
+<text x="28" y="38" fill="#d4b483" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.6">02</text>
+<text x="52" y="38" fill="#858b9c" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">/</text>
+<text x="68" y="38" fill="#7ce8ff" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="1.2">APLICAÇÃO WEB · SUPABASE</text>
+<text x="28" y="78" fill="#ececef" font-family="&apos;Cormorant Garamond&apos;, Georgia, &apos;Times New Roman&apos;, serif" font-size="32" font-weight="600">Minhas Finanças</text>
+<text x="28" y="108" fill="#858b9c" font-family="&apos;Inter&apos;, -apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif" font-size="12">Aplicação web de gestão financeira pessoal no</text>
+<text x="28" y="127" fill="#858b9c" font-family="&apos;Inter&apos;, -apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif" font-size="12">GitHub Pages, com autenticação e persistência</text>
+<text x="28" y="146" fill="#858b9c" font-family="&apos;Inter&apos;, -apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif" font-size="12">em Postgres gerenciado pelo Supabase.</text>
+<rect x="28.5" y="178.5" width="87" height="22" fill="#090a10" stroke="#1c202e" stroke-width="1"/>
+<text x="38" y="193" fill="#858b9c" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" letter-spacing="0.8">JAVASCRIPT</text>
+<rect x="124.5" y="178.5" width="73.4" height="22" fill="#090a10" stroke="#1c202e" stroke-width="1"/>
+<text x="134" y="193" fill="#858b9c" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" letter-spacing="0.8">SUPABASE</text>
+<rect x="206.9" y="178.5" width="73.4" height="22" fill="#090a10" stroke="#1c202e" stroke-width="1"/>
+<text x="216.4" y="193" fill="#858b9c" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" letter-spacing="0.8">POSTGRES</text>
+<rect x="289.3" y="178.5" width="100.6" height="22" fill="#090a10" stroke="#1c202e" stroke-width="1"/>
+<text x="298.8" y="193" fill="#858b9c" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" letter-spacing="0.8">GITHUB PAGES</text>
+<line x1="420" y1="20" x2="420" y2="250" stroke="#1c202e" stroke-width="1"/>
+<path d="M420 130 L425 135 L420 140 L415 135 Z" fill="#090a10" stroke="#d4b483" stroke-width="1"/>
+<rect x="442.5" y="20.5" width="493" height="229" fill="#090a10" stroke="#1c202e" stroke-width="1"/>
+<rect x="443" y="21" width="492" height="28" fill="#10121a"/>
+<line x1="443" y1="49" x2="935" y2="49" stroke="#1c202e" stroke-width="1"/>
+<text x="456" y="38.5" fill="#7ce8ff" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" letter-spacing="1">TODOS · ENTRADAS · SAÍDAS</text>
+<text x="922" y="38.5" fill="#d4b483" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" letter-spacing="1.1" text-anchor="end">SUPABASE AUTH · POSTGRES</text>
+<rect x="458.5" y="60.5" width="146" height="48" fill="#10121a" stroke="#1c202e"/>
+<text x="468" y="77" fill="#858b9c" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.5" letter-spacing="1">ENTRADAS</text>
+<text x="468" y="97" fill="#7ce8ff" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">R$ 6.400</text>
+<rect x="616.5" y="60.5" width="146" height="48" fill="#10121a" stroke="#1c202e"/>
+<text x="626" y="77" fill="#858b9c" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.5" letter-spacing="1">SAÍDAS</text>
+<text x="626" y="97" fill="#858b9c" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">R$ 3.850</text>
+<rect x="774.5" y="60.5" width="145" height="48" fill="#10121a" stroke="#d4b483" stroke-opacity="0.55"/>
+<text x="784" y="77" fill="#d4b483" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8.5" letter-spacing="1">SALDO</text>
+<text x="784" y="97" fill="#ececef" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">+ R$ 2.550</text>
+<rect x="458" y="118" width="286" height="4" fill="#7ce8ff"/>
+<rect x="748" y="118" width="172" height="4" fill="#d4b483"/>
+<text x="458" y="134" fill="#858b9c" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="8" letter-spacing="0.8">62% INFLOW // 38% OUTFLOW</text>
+<rect x="458.5" y="144.5" width="461" height="20" fill="#10121a" stroke="#1c202e"/>
+<text x="468" y="157.5" fill="#ececef" font-family="&apos;Inter&apos;, -apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif" font-size="10">Projeto Freelance Web</text>
+<text x="910" y="157.5" fill="#7ce8ff" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" text-anchor="end">+ R$ 4.200</text>
+<rect x="458.5" y="168.5" width="461" height="20" fill="#10121a" stroke="#1c202e"/>
+<text x="468" y="181.5" fill="#ececef" font-family="&apos;Inter&apos;, -apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif" font-size="10">Consultoria API REST</text>
+<text x="910" y="181.5" fill="#7ce8ff" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" text-anchor="end">+ R$ 2.200</text>
+<rect x="458.5" y="192.5" width="461" height="20" fill="#10121a" stroke="#1c202e"/>
+<text x="468" y="205.5" fill="#ececef" font-family="&apos;Inter&apos;, -apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif" font-size="10">Infraestrutura &amp; Domínio</text>
+<text x="910" y="205.5" fill="#d4b483" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" text-anchor="end">- R$ 340</text>
+<rect x="458.5" y="216.5" width="461" height="20" fill="#10121a" stroke="#1c202e"/>
+<text x="468" y="229.5" fill="#ececef" font-family="&apos;Inter&apos;, -apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Helvetica, Arial, sans-serif" font-size="10">Despesas Fixas Mensais</text>
+<text x="910" y="229.5" fill="#858b9c" font-family="&apos;JetBrains Mono&apos;, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" text-anchor="end">- R$ 3.510</text>
+</svg>
