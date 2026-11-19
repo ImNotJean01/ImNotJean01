@@ -1,0 +1,22 @@
+# Secrets & environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencies, caches & logs
+node_modules/
+npm-debug.log*
+*.log
+*.tmp
+.cache/
+
+# OS & editor artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,0 +1,17 @@
+{
+  "name": "imnotjean01",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ImNotJean01 GitHub profile portfolio — zero-dependency local SVG and bilingual README pipeline",
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "build:assets": "node scripts/build-assets.mjs",
+    "build:readmes": "node scripts/build-static-readmes.mjs",
+    "build": "node scripts/build-assets.mjs && node scripts/build-static-readmes.mjs",
+    "validate": "node scripts/validate.mjs",
+    "check": "node scripts/build-assets.mjs && node scripts/build-static-readmes.mjs && node scripts/validate.mjs"
+  }
+}

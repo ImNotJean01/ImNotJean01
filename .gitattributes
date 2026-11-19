@@ -1,0 +1,6 @@
+# Enforce deterministic LF line endings so SHA-256 SVG hashes stay identical across OSes
+* text=auto eol=lf
+*.svg text eol=lf
+*.md text eol=lf
+*.mjs text eol=lf
+*.json text eol=lf
