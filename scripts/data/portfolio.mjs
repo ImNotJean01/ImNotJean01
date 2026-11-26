@@ -63,6 +63,11 @@ export const PROFILE = Object.freeze({
       "mobile com foco em arquitetura limpa,",
       "APIs REST e IA generativa aplicada.",
     ]),
+    heroIslands: Object.freeze([
+      { index: "01", label: "FOCO TÉCNICO", value: "Full-Stack & Mobile", sub: "APIs REST · Dados · LLMs" },
+      { index: "02", label: "FORMAÇÃO", value: "ADS · UNINASSAU", sub: "Graduação · Reta final" },
+      { index: "03", label: "ATUAÇÃO", value: "Skam Tecnologia", sub: "Web · Deploy · APIs" },
+    ]),
     bio: "Graduando em Análise e Desenvolvimento de Sistemas pela UNINASSAU. Atuo na construção de aplicações web, mobile e back-end — combinando modelagem de dados, padrões arquiteturais e integrações com LLMs para entregar software estável e de fácil manutenção.",
     heroMeta: "UNINASSAU · ADS · IMNOTJEAN01 · 05 PROJETOS · 04 DOMÍNIOS",
     heroMetaMobile: "UNINASSAU · ADS · IMNOTJEAN01",
@@ -94,6 +99,11 @@ export const PROFILE = Object.freeze({
       "Building web and mobile systems",
       "focused on clean architecture, REST",
       "APIs, and applied generative AI.",
+    ]),
+    heroIslands: Object.freeze([
+      { index: "01", label: "CORE FOCUS", value: "Full-Stack & Mobile", sub: "REST APIs · Data · LLMs" },
+      { index: "02", label: "EDUCATION", value: "ADS · UNINASSAU", sub: "Degree · Final term" },
+      { index: "03", label: "EXPERIENCE", value: "Skam Tecnologia", sub: "Web · Deploy · APIs" },
     ]),
     bio: "B.Sc. candidate in Systems Analysis and Development at UNINASSAU. I build web, mobile, and back-end applications — combining relational data modeling, architectural patterns, and LLM integrations to deliver reliable, maintainable software.",
     heroMeta: "UNINASSAU · ADS · IMNOTJEAN01 · 05 PROJECTS · 04 DOMAINS",
@@ -322,6 +332,11 @@ export const PROJECTS = Object.freeze([
         "contextualizado por IA e localização de clínicas",
         "próximas via Supabase e back-end Node.js.",
       ],
+      specLines: [
+        "01 · App React Native + Expo em TypeScript",
+        "02 · Chat contextual IA via back-end Node.js",
+        "03 · Auth Supabase + geolocalização de clínicas",
+      ],
       highlights: [
         "Aplicativo multiplataforma desenvolvido em React Native + Expo com TypeScript",
         "Chat contextualizado conectado a APIs de IA via back-end em Node.js",
@@ -355,6 +370,11 @@ export const PROJECTS = Object.freeze([
         "Mobile emotional support app combining",
         "context-aware AI chat with nearby clinic",
         "discovery powered by Node.js and Supabase.",
+      ],
+      specLines: [
+        "01 · React Native + Expo app in TypeScript",
+        "02 · Context-aware AI chat via Node.js API",
+        "03 · Supabase auth + nearby clinic geolocation",
       ],
       highlights: [
         "Cross-platform mobile app built with React Native + Expo and TypeScript",
@@ -399,6 +419,11 @@ export const PROJECTS = Object.freeze([
         "GitHub Pages, com autenticação e persistência",
         "em Postgres gerenciado pelo Supabase.",
       ],
+      specLines: [
+        "01 · Login e isolamento por usuário via Supabase",
+        "02 · Persistência relacional em banco Postgres",
+        "03 · Filtros de entradas, saídas e saldo real",
+      ],
       highlights: [
         "Autenticação segura e persistência em banco Postgres gerenciado pelo Supabase",
         "Controle de receitas, despesas e saldo consolidado em interface direta e leve",
@@ -429,6 +454,11 @@ export const PROJECTS = Object.freeze([
         "Personal finance web app hosted on GitHub",
         "Pages, featuring user authentication and",
         "Postgres data persistence via Supabase.",
+      ],
+      specLines: [
+        "01 · User-scoped auth via Supabase Auth",
+        "02 · Relational Postgres ledger persistence",
+        "03 · Direct income, expense & balance filters",
       ],
       highlights: [
         "User authentication and Postgres persistence managed through Supabase",
@@ -473,6 +503,11 @@ export const PROJECTS = Object.freeze([
         "limpa, modelagem relacional SQL, padrões",
         "DDD/CQRS e métricas de engenharia DORA.",
       ],
+      specLines: [
+        "01 · Isolamento de domínio com DDD, CQRS e UML",
+        "02 · Esquema relacional SQL focado em consistência",
+        "03 · Painel de métricas de engenharia DORA",
+      ],
       highlights: [
         "Separação de responsabilidades em camadas com DDD, CQRS e diagramação UML",
         "Modelagem relacional SQL focada em consistência e escalabilidade das rotinas de RH",
@@ -504,6 +539,11 @@ export const PROJECTS = Object.freeze([
         "Human Resources platform designed with clean",
         "architecture, relational SQL modeling, DDD",
         "and CQRS patterns, plus DORA metrics.",
+      ],
+      specLines: [
+        "01 · Domain isolation with DDD, CQRS & UML",
+        "02 · Relational SQL schema built for consistency",
+        "03 · Integrated DORA engineering metrics view",
       ],
       highlights: [
         "Layered domain isolation with DDD, CQRS, and UML specification",
@@ -546,6 +586,11 @@ export const PROJECTS = Object.freeze([
         "(Commands) e leitura otimizada (Queries),",
         "modelagem DDD e execução stateless na borda.",
       ],
+      specLines: [
+        "01 · Pipelines separados para Commands e Queries",
+        "02 · Regras de negócio encapsuladas em DDD",
+        "03 · Deploy stateless em Cloudflare e Vercel",
+      ],
       highlights: [
         "Fluxos desacoplados entre escrita (Commands) e leitura otimizada (Queries)",
         "Execução stateless pensada para borda serverless na Cloudflare e Vercel",
@@ -576,6 +621,11 @@ export const PROJECTS = Object.freeze([
         "Architecture-driven system separating write",
         "commands from read-optimized queries with",
         "DDD modeling and stateless edge deployment.",
+      ],
+      specLines: [
+        "01 · Decoupled Command and Query pipelines",
+        "02 · Business invariants encapsulated in DDD",
+        "03 · Stateless edge deploy on Cloudflare/Vercel",
       ],
       highlights: [
         "Decoupled write commands and read-optimized query pipelines",
@@ -616,6 +666,11 @@ export const PROJECTS = Object.freeze([
         "Ordem Paranormal, Tormenta 20 e Genérico com",
         "tabuleiro tático e sincronização Supabase.",
       ],
+      specLines: [
+        "01 · Ordem Paranormal, D&D 5e, Tormenta 20 e Genérico",
+        "02 · Tabuleiro tático e gerador de masmorras",
+        "03 · Dados e fichas em tempo real via Supabase",
+      ],
       highlights: [
         "Suporte multi-sistema (Ordem Paranormal, D&D 5e, Tormenta 20 e Genérico) com alternância de tema visual (`neutro` / `paranormal`)",
         "Tabuleiro tático interativo com gerador procedural de masmorras, carimbos, alfinetes, texturas e histórico de ações",
@@ -652,6 +707,11 @@ export const PROJECTS = Object.freeze([
         "Real-time virtual tabletop for D&D 5e, Ordem",
         "Paranormal, Tormenta 20 & Generic with tactical",
         "dungeon board and Supabase Realtime sync.",
+      ],
+      specLines: [
+        "01 · Ordem Paranormal, D&D 5e, Tormenta 20 & Generic",
+        "02 · Tactical board + procedural dungeon generator",
+        "03 · Real-time dice & sheets via Supabase Realtime",
       ],
       highlights: [
         "Multi-system support (Ordem Paranormal, D&D 5e, Tormenta 20, and Generic) with visual theme toggle (`neutro` / `paranormal`)",
@@ -750,46 +810,94 @@ export const STACK_DOMAINS = Object.freeze([
 export const EXPERIENCE = Object.freeze({
   pt: [
     {
+      index: "01",
       company: "Skam Tecnologia",
       role: "Desenvolvedor Web Freelancer",
-      badge: "Experiência",
+      badge: "EXPERIÊNCIA",
+      accent: "silk",
+      lines: [
+        "Desenvolvimento web e manutenção",
+        "evolutiva em produção, deploy e",
+        "integrações de APIs REST e IA.",
+      ],
+      tags: ["WEB", "REST APIS", "DEPLOY"],
       description:
         "Desenvolvimento web, manutenção evolutiva e corretiva de sistemas em produção, deploy de aplicações e integrações de APIs REST com apoio de IA generativa no fluxo técnico.",
     },
     {
+      index: "02",
       company: "Auxiliar de TI",
       role: "Infraestrutura & Sistemas",
-      badge: "Experiência",
+      badge: "EXPERIÊNCIA",
+      accent: "silk",
+      lines: [
+        "Diagnóstico e manutenção de",
+        "hardware, software, redes locais",
+        "e padronização de ambientes.",
+      ],
+      tags: ["REDES", "HARDWARE", "SISTEMAS"],
       description:
         "Configuração, diagnóstico e manutenção de hardware, software, redes locais e padronização de ambientes.",
     },
     {
+      index: "03",
       company: "UNINASSAU",
-      role: "Análise e Desenvolvimento de Sistemas (ADS)",
-      badge: "Formação · Graduação · Reta final",
+      role: "Análise e Desenv. de Sistemas",
+      badge: "FORMAÇÃO · RETA FINAL",
+      accent: "spirit",
+      lines: [
+        "Graduação em ADS com foco em",
+        "engenharia de software, bancos",
+        "de dados e arquitetura limpa.",
+      ],
+      tags: ["ADS", "ARQUITETURA", "SQL"],
       description:
         "Formação em engenharia de software, modelagem de bancos de dados, arquitetura de sistemas, padrões de projeto e desenvolvimento web e mobile.",
     },
   ],
   en: [
     {
+      index: "01",
       company: "Skam Tecnologia",
       role: "Freelance Web Developer",
-      badge: "Experience",
+      badge: "EXPERIENCE",
+      accent: "silk",
+      lines: [
+        "Web development, evolutionary",
+        "maintenance in production, deploy",
+        "pipelines, and REST APIs.",
+      ],
+      tags: ["WEB", "REST APIS", "DEPLOY"],
       description:
         "Web development, corrective and evolutionary maintenance of production systems, deployment pipelines, and REST API integrations.",
     },
     {
+      index: "02",
       company: "IT Assistant",
       role: "Infrastructure & Systems",
-      badge: "Experience",
+      badge: "EXPERIENCE",
+      accent: "silk",
+      lines: [
+        "Hardware and software diagnostics,",
+        "local network administration, and",
+        "environment standardization.",
+      ],
+      tags: ["NETWORKS", "HARDWARE", "SYSTEMS"],
       description:
         "Hardware and software diagnostics, local network administration, system setup, and environment standardization.",
     },
     {
+      index: "03",
       company: "UNINASSAU",
-      role: "Systems Analysis and Development (ADS)",
-      badge: "Education · Degree · Final term",
+      role: "Systems Analysis & Dev. (ADS)",
+      badge: "DEGREE · FINAL TERM",
+      accent: "spirit",
+      lines: [
+        "Undergraduate degree focused on",
+        "software engineering, relational",
+        "databases, and clean architecture.",
+      ],
+      tags: ["ADS", "ARCHITECTURE", "SQL"],
       description:
         "Undergraduate degree focused on software engineering, relational database modeling, system architecture, design patterns, and web/mobile development.",
     },
@@ -800,6 +908,41 @@ export const BEYOND_CODE = Object.freeze({
   terminalHeader: "jean@abyss:~ / sistemas",
   pt: {
     summary: "Sistemas & referências — jean@abyss:~ / sistemas",
+    islands: [
+      {
+        index: "01",
+        label: "ESTRATÉGIA & SISTEMAS",
+        accent: "silk",
+        lines: [
+          "Sistemas estruturados, telemetria e",
+          "criação de campanhas investigativas",
+          "com mistério e loops temporais.",
+        ],
+        tags: ["XADREZ", "FÓRMULA 1", "MESTRE DE RPG", "D&D 5E", "ORDEM PARANORMAL"],
+      },
+      {
+        index: "02",
+        label: "REFERÊNCIAS & ATMOSFERA",
+        accent: "spirit",
+        lines: [
+          "Estética noturna e precisa de jogos",
+          "indie, ficção científica densa e",
+          "universos de fantasia sombria.",
+        ],
+        tags: ["HOLLOW KNIGHT", "CELESTE", "BLADE RUNNER 2049", "INTERSTELLAR", "WARHAMMER 40K"],
+      },
+      {
+        index: "03",
+        label: "TRILHA DE FOCO",
+        accent: "silk",
+        lines: [
+          "Instrumental técnico, texturas",
+          "densas de shoegaze japonês, rock",
+          "psicodélico e sonoridade noturna.",
+        ],
+        tags: ["POLYPHIA", "MASS OF THE FERMENTING DREGS", "TAME IMPALA", "CITY POP"],
+      },
+    ],
     tree: [
       "jean@abyss:~ / sistemas",
       "├── Estrategia & Sistemas",
@@ -832,6 +975,41 @@ export const BEYOND_CODE = Object.freeze({
   },
   en: {
     summary: "Systems & influences — jean@abyss:~ / sistemas",
+    islands: [
+      {
+        index: "01",
+        label: "STRATEGY & SYSTEMS",
+        accent: "silk",
+        lines: [
+          "Structured systems, telemetry, and",
+          "investigative tabletop RPG campaigns",
+          "built around mystery and time loops.",
+        ],
+        tags: ["CHESS", "FORMULA 1", "TABLETOP RPG GM", "D&D 5E", "ORDEM PARANORMAL"],
+      },
+      {
+        index: "02",
+        label: "REFERENCES & CRAFT",
+        accent: "spirit",
+        lines: [
+          "Nocturnal precision from indie",
+          "platformers, dense sci-fi cinema,",
+          "and dark science-fantasy lore.",
+        ],
+        tags: ["HOLLOW KNIGHT", "CELESTE", "BLADE RUNNER 2049", "INTERSTELLAR", "WARHAMMER 40K"],
+      },
+      {
+        index: "03",
+        label: "FOCUS SOUNDTRACK",
+        accent: "silk",
+        lines: [
+          "Technical progressive guitar, dense",
+          "Japanese shoegaze textures, psych",
+          "rock, and nocturnal City Pop.",
+        ],
+        tags: ["POLYPHIA", "MASS OF THE FERMENTING DREGS", "TAME IMPALA", "CITY POP"],
+      },
+    ],
     tree: [
       "jean@abyss:~ / sistemas",
       "├── Strategy & Systems",

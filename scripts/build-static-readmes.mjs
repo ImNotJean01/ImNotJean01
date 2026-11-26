@@ -57,53 +57,40 @@ function renderTopSwitcher(variant, manifest) {
   ].join("\n");
 }
 
-function renderHero(variant, manifest) {
+function renderHeroAndNav(variant, manifest) {
   const { lang, staticMode } = variant;
   const heroes = manifest.heroes[lang];
   const alt = PROFILE[lang].heroAlt;
 
-  if (staticMode) {
-    return [
-      `<p align="center">`,
-      `  <picture>`,
-      `    <source media="(max-width: 600px)" srcset="${heroes.mobileStatic}" />`,
-      `    <img src="${heroes.desktopStatic}" width="960" alt="${alt}" />`,
-      `  </picture>`,
-      `</p>`,
-    ].join("\n");
-  }
+  const heroPicture = staticMode
+    ? [
+        `<p align="center">`,
+        `  <picture>`,
+        `    <source media="(max-width: 600px)" srcset="${heroes.mobileStatic}" />`,
+        `    <img src="${heroes.desktopStatic}" width="960" alt="${alt}" />`,
+        `  </picture>`,
+        `</p>`,
+      ].join("\n")
+    : [
+        `<p align="center">`,
+        `  <picture>`,
+        `    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="${heroes.mobileStatic}" />`,
+        `    <source media="(prefers-reduced-motion: reduce)" srcset="${heroes.desktopStatic}" />`,
+        `    <source media="(max-width: 600px)" srcset="${heroes.mobile}" />`,
+        `    <img src="${heroes.desktop}" width="960" alt="${alt}" />`,
+        `  </picture>`,
+        `</p>`,
+      ].join("\n");
 
-  return [
-    `<p align="center">`,
-    `  <picture>`,
-    `    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="${heroes.mobileStatic}" />`,
-    `    <source media="(prefers-reduced-motion: reduce)" srcset="${heroes.desktopStatic}" />`,
-    `    <source media="(max-width: 600px)" srcset="${heroes.mobile}" />`,
-    `    <img src="${heroes.desktop}" width="960" alt="${alt}" />`,
-    `  </picture>`,
-    `</p>`,
-  ].join("\n");
-}
-
-function renderIdentityAndNav(variant, manifest) {
-  const { lang } = variant;
-  const copy = PROFILE[lang];
   const navLinks = NAV.map((item) => {
     const anchor = lang === "pt" ? item.ptAnchor : item.enAnchor;
     const slug = lang === "pt" ? item.ptSlug : item.enSlug;
-    const alt = lang === "pt" ? item.ptAlt : item.enAlt;
-    return `  <a href="${anchor}"><img src="${manifest.links[slug]}" height="44" alt="${alt}" /></a>`;
+    const altText = lang === "pt" ? item.ptAlt : item.enAlt;
+    return `  <a href="${anchor}"><img src="${manifest.links[slug]}" height="44" alt="${altText}" /></a>`;
   }).join("\n");
 
   return [
-    `# ${PROFILE.name}`,
-    ``,
-    `**${copy.role}**  `,
-    `${copy.location} · ${copy.availability}`,
-    ``,
-    `> ${copy.tagline}`,
-    ``,
-    `${copy.bio}`,
+    heroPicture,
     ``,
     `<p align="center">`,
     navLinks,
@@ -114,10 +101,6 @@ function renderIdentityAndNav(variant, manifest) {
 function renderProjects(variant, manifest) {
   const { lang, staticMode } = variant;
   const heading = lang === "pt" ? NAV[0].ptHeading : NAV[0].enHeading;
-  const labels =
-    lang === "pt"
-      ? { highlights: "Destaques", stack: "Stack", status: "Estado" }
-      : { highlights: "Highlights", stack: "Stack", status: "Status" };
 
   const blocks = [`## ${heading}`];
 
@@ -145,44 +128,23 @@ function renderProjects(variant, manifest) {
       const actionItems = [];
       if (project.links.live) {
         const liveBtn = manifest.links[`action-live-${lang}`];
-        actionItems.push(`  <a href="${project.links.live}"><img src="${liveBtn}" height="44" alt="${pCopy.liveAlt}" /></a>`);
+        actionItems.push(
+          `  <a href="${project.links.live}"><img src="${liveBtn}" height="44" alt="${pCopy.liveAlt}" /></a>`
+        );
       }
       if (project.links.repo) {
         const repoBtn = manifest.links[`action-repo-${lang}`];
-        actionItems.push(`  <a href="${project.links.repo}"><img src="${repoBtn}" height="44" alt="${pCopy.repoAlt}" /></a>`);
+        actionItems.push(
+          `  <a href="${project.links.repo}"><img src="${repoBtn}" height="44" alt="${pCopy.repoAlt}" /></a>`
+        );
       }
-      actionsBlock = `<p>\n${actionItems.join("\n")}\n</p>`;
+      actionsBlock = `<p align="center">\n${actionItems.join("\n")}\n</p>`;
     } else {
       const privateBtn = manifest.links[`status-private-${lang}`];
-      actionsBlock = `<p>\n  <img src="${privateBtn}" height="44" alt="${pCopy.privateAlt}" />\n</p>`;
+      actionsBlock = `<p align="center">\n  <img src="${privateBtn}" height="44" alt="${pCopy.privateAlt}" />\n</p>`;
     }
 
-    const detailsBullets = pCopy.detailsBullets.map((b) => `- ${b}`).join("\n");
-
-    blocks.push(
-      [
-        `### ${project.index} / ${project.title}`,
-        ``,
-        `*${pCopy.context}*`,
-        ``,
-        coverBlock,
-        ``,
-        `${pCopy.description}`,
-        ``,
-        `- **${labels.highlights}:** ${pCopy.highlights.join(" · ")}`,
-        `- **${labels.stack}:** ${pCopy.stack.join(" · ")}`,
-        `- **${labels.status}:** ${pCopy.status}`,
-        ``,
-        actionsBlock,
-        ``,
-        `<details>`,
-        `<summary>${pCopy.detailsSummary}</summary>`,
-        ``,
-        detailsBullets,
-        ``,
-        `</details>`,
-      ].join("\n")
-    );
+    blocks.push([coverBlock, actionsBlock].join("\n"));
   }
 
   return blocks.join("\n\n");
@@ -191,7 +153,6 @@ function renderProjects(variant, manifest) {
 function renderStack(variant, manifest) {
   const { lang } = variant;
   const heading = lang === "pt" ? NAV[1].ptHeading : NAV[1].enHeading;
-  const summaryLabel = lang === "pt" ? "Resumo" : "Summary";
 
   const blocks = [`## ${heading}`];
 
@@ -203,80 +164,69 @@ function renderStack(variant, manifest) {
         return `  <img src="${manifest.stack[item.slug]}" width="142" alt="${fullName}" />`;
       })
       .join("\n");
-    const summaryText = domain.items
-      .map((item) => (lang === "pt" ? item.ptText : item.enText))
-      .join(" · ");
 
-    blocks.push(
-      [
-        `### ${title}`,
-        ``,
-        `<p>`,
-        cards,
-        `</p>`,
-        ``,
-        `**${summaryLabel}:** ${summaryText}`,
-      ].join("\n")
-    );
+    blocks.push([`### ${title}`, ``, `<p align="center">`, cards, `</p>`].join("\n"));
   }
 
   return blocks.join("\n\n");
 }
 
-function renderExperience(variant) {
-  const { lang } = variant;
+function renderExperience(variant, manifest) {
+  const { lang, staticMode } = variant;
   const heading = lang === "pt" ? NAV[2].ptHeading : NAV[2].enHeading;
-  const items = EXPERIENCE[lang]
-    .map(
-      (entry) =>
-        `- **${entry.company}** · *${entry.role}* (\`${entry.badge}\`)  \n  ${entry.description}`
-    )
-    .join("\n");
+  const expEntry = manifest.experience[lang];
+  const alt = EXPERIENCE[lang]
+    .map((e) => `${e.company} — ${e.role} (${e.badge})`)
+    .join(" · ");
 
-  return [`## ${heading}`, ``, items].join("\n");
+  const islandBlock = staticMode
+    ? [
+        `<p align="center">`,
+        `  <img src="${expEntry.static}" width="960" alt="${alt}" />`,
+        `</p>`,
+      ].join("\n")
+    : [
+        `<p align="center">`,
+        `  <picture>`,
+        `    <source media="(prefers-reduced-motion: reduce)" srcset="${expEntry.static}" />`,
+        `    <img src="${expEntry.animated}" width="960" alt="${alt}" />`,
+        `  </picture>`,
+        `</p>`,
+      ].join("\n");
+
+  return [`## ${heading}`, ``, islandBlock].join("\n");
 }
 
-function renderBeyondCode(variant) {
-  const { lang } = variant;
+function renderBeyondCode(variant, manifest) {
+  const { lang, staticMode } = variant;
   const heading = lang === "pt" ? NAV[3].ptHeading : NAV[3].enHeading;
+  const beyondEntry = manifest.beyond[lang];
   const data = BEYOND_CODE[lang];
-  const bullets = data.items
-    .map((item) => `- **${item.label}:** ${item.detail}`)
-    .join("\n");
+  const alt = `${data.summary} · ${data.islands.map((i) => i.label).join(" · ")}`;
 
-  return [
-    `## ${heading}`,
-    ``,
-    `<details>`,
-    `<summary>${data.summary}</summary>`,
-    ``,
-    "```text",
-    ...data.tree,
-    "```",
-    ``,
-    bullets,
-    ``,
-    `</details>`,
-  ].join("\n");
+  const islandBlock = staticMode
+    ? [
+        `<p align="center">`,
+        `  <img src="${beyondEntry.static}" width="960" alt="${alt}" />`,
+        `</p>`,
+      ].join("\n")
+    : [
+        `<p align="center">`,
+        `  <picture>`,
+        `    <source media="(prefers-reduced-motion: reduce)" srcset="${beyondEntry.static}" />`,
+        `    <img src="${beyondEntry.animated}" width="960" alt="${alt}" />`,
+        `  </picture>`,
+        `</p>`,
+      ].join("\n");
+
+  return [`## ${heading}`, ``, islandBlock].join("\n");
 }
 
 function renderContactAndFooter(variant, manifest) {
   const { lang, staticMode } = variant;
   const copy = PROFILE[lang];
   const contactHeading = lang === "pt" ? NAV[4].ptHeading : NAV[4].enHeading;
-  const activityHeading = copy.publicActivityTitle;
   const footers = manifest.footers[lang];
-
-  const activityLines =
-    lang === "pt"
-      ? [
-          `- Perfil e arquitetura de portfólio: [ImNotJean01](${LINKS.github}) · [Documentação do design](./docs/PROFILE_DESIGN.md)`,
-          `- Repositórios públicos em destaque: [Minhas-financas](https://github.com/ImNotJean01/Minhas-financas) ([app ao vivo](https://imnotjean01.github.io/Minhas-financas/)) · [Rpg-Table](https://github.com/ImNotJean01/Rpg-Table)`,
-        ]
-      : [
-          `- Profile & portfolio architecture: [ImNotJean01](${LINKS.github}) · [Profile design docs](./docs/PROFILE_DESIGN.md)`,
-          `- Featured public repositories: [Minhas-financas](https://github.com/ImNotJean01/Minhas-financas) ([live app](https://imnotjean01.github.io/Minhas-financas/)) · [Rpg-Table](https://github.com/ImNotJean01/Rpg-Table)`,
-        ];
 
   const footerBlock = staticMode
     ? [
@@ -319,21 +269,12 @@ function renderContactAndFooter(variant, manifest) {
   return [
     `## ${contactHeading}`,
     ``,
-    `${copy.contactMessage}`,
+    footerBlock,
     ``,
     `<p align="center">`,
     `  <a href="${LINKS.github}"><img src="${manifest.links["contact-github"]}" height="44" alt="GitHub — ImNotJean01" /></a>`,
     `  <a href="${LINKS.linkedin}"><img src="${manifest.links["contact-linkedin"]}" height="44" alt="LinkedIn — Jean Santos" /></a>`,
     `</p>`,
-    ``,
-    `- GitHub: [github.com/ImNotJean01](${LINKS.github})`,
-    `- LinkedIn: [linkedin.com/in/jean-santos-902766295](${LINKS.linkedin})`,
-    ``,
-    `## ${activityHeading}`,
-    ``,
-    ...activityLines,
-    ``,
-    footerBlock,
     ``,
     bottomLinks,
   ].join("\n");
@@ -342,12 +283,11 @@ function renderContactAndFooter(variant, manifest) {
 function buildReadme(variant, manifest) {
   const sections = [
     renderTopSwitcher(variant, manifest),
-    renderHero(variant, manifest),
-    renderIdentityAndNav(variant, manifest),
+    renderHeroAndNav(variant, manifest),
     renderProjects(variant, manifest),
     renderStack(variant, manifest),
-    renderExperience(variant),
-    renderBeyondCode(variant),
+    renderExperience(variant, manifest),
+    renderBeyondCode(variant, manifest),
     renderContactAndFooter(variant, manifest),
   ];
 

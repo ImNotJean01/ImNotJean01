@@ -9,6 +9,8 @@ import {
   LINK_BUTTONS,
   PROJECTS,
   STACK_DOMAINS,
+  EXPERIENCE,
+  BEYOND_CODE,
 } from "./data/portfolio.mjs";
 import {
   escapeXml,
@@ -180,10 +182,73 @@ function buildDesktopHero(lang, isStatic) {
       }
     }`;
 
+  const miniIslandElems = (copy.heroIslands ?? []).flatMap((isl, idx) => {
+    const ix = 44 + idx * 206;
+    const iy = 228;
+    const iw = 196;
+    const ih = 58;
+    const accent = idx === 1 ? PALETTE.spirit : PALETTE.silk;
+    return [
+      el("rect", {
+        x: ix + 0.5,
+        y: iy + 0.5,
+        width: iw - 1,
+        height: ih - 1,
+        fill: PALETTE.abyss,
+        stroke: PALETTE.line,
+        "stroke-width": "1",
+      }),
+      el("rect", {
+        x: ix + 1,
+        y: iy + 1,
+        width: 2,
+        height: ih - 2,
+        fill: accent,
+        "fill-opacity": "0.75",
+      }),
+      textEl(
+        "text",
+        {
+          x: ix + 12,
+          y: iy + 16,
+          fill: accent,
+          "font-family": TYPOGRAPHY.mono,
+          "font-size": "8.5",
+          "letter-spacing": "1",
+        },
+        `${isl.index} · ${isl.label}`
+      ),
+      textEl(
+        "text",
+        {
+          x: ix + 12,
+          y: iy + 35,
+          fill: PALETTE.soul,
+          "font-family": TYPOGRAPHY.serif,
+          "font-size": "15.5",
+          "font-weight": "600",
+        },
+        isl.value
+      ),
+      textEl(
+        "text",
+        {
+          x: ix + 12,
+          y: iy + 50,
+          fill: PALETTE.mist,
+          "font-family": TYPOGRAPHY.mono,
+          "font-size": "8",
+          "letter-spacing": "0.7",
+        },
+        isl.sub
+      ),
+    ];
+  });
+
   const body = [
-    el("rect", { x: 0, y: 0, width: 960, height: 320, fill: PALETTE.abyss }),
-    el("rect", { x: 0, y: 0, width: 960, height: 320, fill: `url(#hero-${lang}-spirit-glow)` }),
-    el("rect", { x: 0, y: 0, width: 960, height: 320, fill: `url(#hero-${lang}-silk-glow)` }),
+    el("rect", { x: 0, y: 0, width: 960, height: 356, fill: PALETTE.abyss }),
+    el("rect", { x: 0, y: 0, width: 960, height: 356, fill: `url(#hero-${lang}-spirit-glow)` }),
+    el("rect", { x: 0, y: 0, width: 960, height: 356, fill: `url(#hero-${lang}-silk-glow)` }),
     renderParticles(DESKTOP_PARTICLES, isStatic),
 
     // Main framed plate
@@ -191,7 +256,7 @@ function buildDesktopHero(lang, isStatic) {
       x: 16.5,
       y: 16.5,
       width: 927,
-      height: 287,
+      height: 323,
       fill: PALETTE.surface,
       "fill-opacity": "0.88",
       stroke: PALETTE.line,
@@ -201,11 +266,11 @@ function buildDesktopHero(lang, isStatic) {
       x: 16,
       y: 44,
       width: 2,
-      height: 232,
+      height: 268,
       fill: PALETTE.silk,
       "fill-opacity": "0.7",
     }),
-    cornerTicks(16.5, 16.5, 927, 287, 10),
+    cornerTicks(16.5, 16.5, 927, 323, 10),
 
     // Top eyebrow
     el("path", {
@@ -276,7 +341,7 @@ function buildDesktopHero(lang, isStatic) {
       "text",
       {
         x: 44,
-        y: 112,
+        y: 106,
         fill: PALETTE.soul,
         "font-family": TYPOGRAPHY.serif,
         "font-size": "39",
@@ -289,7 +354,7 @@ function buildDesktopHero(lang, isStatic) {
       "text",
       {
         x: 44,
-        y: 142,
+        y: 134,
         fill: PALETTE.spirit,
         "fill-opacity": "0.92",
         "font-family": TYPOGRAPHY.mono,
@@ -302,9 +367,9 @@ function buildDesktopHero(lang, isStatic) {
     // Quote tagline
     el("rect", {
       x: 44,
-      y: 168,
+      y: 156,
       width: 2,
-      height: 50,
+      height: 48,
       fill: PALETTE.silk,
       "fill-opacity": "0.6",
     }),
@@ -312,11 +377,11 @@ function buildDesktopHero(lang, isStatic) {
       "text",
       {
         x: 60,
-        y: 187,
+        y: 174,
         fill: PALETTE.soul,
         "fill-opacity": "0.92",
         "font-family": TYPOGRAPHY.serif,
-        "font-size": "18.5",
+        "font-size": "18",
       },
       copy.taglineDesktopLines[0]
     ),
@@ -324,30 +389,33 @@ function buildDesktopHero(lang, isStatic) {
       "text",
       {
         x: 60,
-        y: 211,
+        y: 198,
         fill: PALETTE.soul,
         "fill-opacity": "0.92",
         "font-family": TYPOGRAPHY.serif,
-        "font-size": "18.5",
+        "font-size": "18",
       },
       copy.taglineDesktopLines[1]
     ),
 
+    // 3 Internal Summary Mini-Islands
+    ...miniIslandElems,
+
     // Bottom rail
     el("line", {
       x1: 44,
-      y1: 244,
-      x2: 650,
-      y2: 244,
+      y1: 300,
+      x2: 652,
+      y2: 300,
       stroke: PALETTE.line,
       "stroke-width": "1",
     }),
-    silkDiamondMotif(61, 267),
+    silkDiamondMotif(61, 318),
     textEl(
       "text",
       {
         x: 88,
-        y: 270.5,
+        y: 321.5,
         fill: PALETTE.mist,
         "font-family": TYPOGRAPHY.mono,
         "font-size": "9.5",
@@ -361,7 +429,7 @@ function buildDesktopHero(lang, isStatic) {
       x: 684.5,
       y: 74.5,
       width: 231,
-      height: 205,
+      height: 251,
       fill: PALETTE.abyss,
       stroke: PALETTE.line,
       "stroke-width": "1",
@@ -466,7 +534,7 @@ function buildDesktopHero(lang, isStatic) {
       "text",
       {
         x: 800,
-        y: 263,
+        y: 264,
         fill: PALETTE.silk,
         "font-family": TYPOGRAPHY.mono,
         "font-size": "9",
@@ -475,12 +543,33 @@ function buildDesktopHero(lang, isStatic) {
       },
       "ABYSS · SILK · SPIRIT"
     ),
+    el("line", {
+      x1: 700,
+      y1: 282,
+      x2: 900,
+      y2: 282,
+      stroke: PALETTE.line,
+      "stroke-width": "1",
+    }),
+    textEl(
+      "text",
+      {
+        x: 800,
+        y: 304,
+        fill: PALETTE.mist,
+        "font-family": TYPOGRAPHY.mono,
+        "font-size": "8.5",
+        "letter-spacing": "1.1",
+        "text-anchor": "middle",
+      },
+      lang === "pt" ? "ILHAS · ARQUITETURA · IA" : "ISLANDS · ARCHITECTURE · AI"
+    ),
   ];
 
   return svgDocument({
     idPrefix: `hero-${lang}${isStatic ? "-static" : ""}`,
     width: 960,
-    height: 320,
+    height: 356,
     title: `${PROFILE.name} — Hero (${lang.toUpperCase()}${isStatic ? ", Static" : ""})`,
     desc: copy.heroAlt,
     defs: ambientGlowDefs(`hero-${lang}`),
@@ -1391,16 +1480,102 @@ function buildProjectCover(project, lang, isStatic) {
       }
     }`;
 
-  // Stack tags in 2x2 grid or horizontal flow inside x=28..400
+  // Internal Specifications Sub-Island inside left column (x=28..403, y=156..252)
+  const specLines = copy.specLines ?? [];
+  const specsHdr = lang === "pt" ? "ESPECIFICAÇÕES // SPECS" : "ARCHITECTURE // SPECS";
+  const statusShort = project.links
+    ? project.links.live
+      ? lang === "pt"
+        ? "ONLINE · CÓDIGO ABERTO"
+        : "LIVE · OPEN SOURCE"
+      : lang === "pt"
+        ? "CÓDIGO ABERTO · GITHUB"
+        : "OPEN SOURCE · GITHUB"
+    : lang === "pt"
+      ? "VITRINE ARQUITETURAL"
+      : "ARCHITECTURE SHOWCASE";
+
+  const specsIslandElems = [
+    el("rect", {
+      x: 28.5,
+      y: 154.5,
+      width: 375,
+      height: 98,
+      fill: PALETTE.abyss,
+      stroke: PALETTE.line,
+      "stroke-width": "1",
+    }),
+    el("rect", {
+      x: 29,
+      y: 155,
+      width: 374,
+      height: 22,
+      fill: PALETTE.surface,
+    }),
+    el("line", {
+      x1: 29,
+      y1: 177,
+      x2: 403,
+      y2: 177,
+      stroke: PALETTE.line,
+      "stroke-width": "1",
+    }),
+    el("rect", {
+      x: 29,
+      y: 155,
+      width: 2,
+      height: 97,
+      fill: PALETTE.spirit,
+      "fill-opacity": "0.75",
+    }),
+    textEl(
+      "text",
+      {
+        x: 40,
+        y: 169.5,
+        fill: PALETTE.silk,
+        "font-family": TYPOGRAPHY.mono,
+        "font-size": "8.5",
+        "letter-spacing": "1.1",
+      },
+      specsHdr
+    ),
+    textEl(
+      "text",
+      {
+        x: 393,
+        y: 169.5,
+        fill: project.links ? PALETTE.spirit : PALETTE.mist,
+        "font-family": TYPOGRAPHY.mono,
+        "font-size": "8",
+        "letter-spacing": "0.9",
+        "text-anchor": "end",
+      },
+      statusShort
+    ),
+    ...specLines.map((sLine, idx) =>
+      textEl(
+        "text",
+        {
+          x: 40,
+          y: 195 + idx * 20,
+          fill: PALETTE.soul,
+          "fill-opacity": "0.9",
+          "font-family": TYPOGRAPHY.sans,
+          "font-size": "10.5",
+        },
+        sLine
+      )
+    ),
+  ];
+
+  // Bottom bar inside the island: Stack tags on left + full stack summary on right
   const tagElems = [];
   let tx = 28;
-  let ty = 178;
+  const ty = 286;
   for (const tag of project.coverTags) {
     const pillW = Math.max(66, tag.length * 6.8 + 20);
-    if (tx + pillW > 402) {
-      tx = 28;
-      ty += 30;
-    }
+    if (tx + pillW > 406) break;
     tagElems.push(
       el("rect", {
         x: tx + 0.5,
@@ -1418,7 +1593,7 @@ function buildProjectCover(project, lang, isStatic) {
           y: ty + 15,
           fill: PALETTE.mist,
           "font-family": TYPOGRAPHY.mono,
-          "font-size": "9",
+          "font-size": "8.5",
           "letter-spacing": "0.8",
         },
         tag.toUpperCase()
@@ -1427,26 +1602,72 @@ function buildProjectCover(project, lang, isStatic) {
     tx += pillW + 8;
   }
 
+  // Right status & stack sub-island under telemetry (x=442..936, y=260..308)
+  const stackLine = copy.stack.join(" · ");
+  const rightFooterSubIsland = [
+    el("rect", {
+      x: 442.5,
+      y: 262.5,
+      width: 493,
+      height: 45,
+      fill: PALETTE.abyss,
+      stroke: PALETTE.line,
+      "stroke-width": "1",
+    }),
+    el("rect", {
+      x: 443,
+      y: 263,
+      width: 2,
+      height: 44,
+      fill: PALETTE.silk,
+      "fill-opacity": "0.75",
+    }),
+    textEl(
+      "text",
+      {
+        x: 456,
+        y: 279,
+        fill: PALETTE.silk,
+        "font-family": TYPOGRAPHY.mono,
+        "font-size": "8.5",
+        "letter-spacing": "1",
+      },
+      lang === "pt" ? "STACK & ESTADO INTEGRADOS NA ILHA" : "ISLAND STACK & STATUS"
+    ),
+    textEl(
+      "text",
+      {
+        x: 456,
+        y: 296,
+        fill: PALETTE.mist,
+        "font-family": TYPOGRAPHY.mono,
+        "font-size": "8.5",
+        "letter-spacing": "0.4",
+      },
+      stackLine.length > 74 ? stackLine.slice(0, 72) + "…" : stackLine
+    ),
+  ];
+
   const body = [
-    el("rect", { x: 0, y: 0, width: 960, height: 270, fill: PALETTE.abyss }),
+    el("rect", { x: 0, y: 0, width: 960, height: 326, fill: PALETTE.abyss }),
     el("rect", {
       x: 0.5,
       y: 0.5,
       width: 959,
-      height: 269,
+      height: 325,
       fill: PALETTE.surface,
       stroke: PALETTE.line,
       "stroke-width": "1",
     }),
-    el("rect", { x: 1, y: 20, width: 2, height: 230, fill: PALETTE.silk, "fill-opacity": "0.65" }),
-    cornerTicks(0.5, 0.5, 959, 269, 8),
+    el("rect", { x: 1, y: 20, width: 2, height: 286, fill: PALETTE.silk, "fill-opacity": "0.65" }),
+    cornerTicks(0.5, 0.5, 959, 325, 8),
 
     // Left editorial zone
     textEl(
       "text",
       {
         x: 28,
-        y: 38,
+        y: 36,
         fill: PALETTE.silk,
         "font-family": TYPOGRAPHY.mono,
         "font-size": "11",
@@ -1458,7 +1679,7 @@ function buildProjectCover(project, lang, isStatic) {
       "text",
       {
         x: 52,
-        y: 38,
+        y: 36,
         fill: PALETTE.mist,
         "font-family": TYPOGRAPHY.mono,
         "font-size": "11",
@@ -1469,7 +1690,7 @@ function buildProjectCover(project, lang, isStatic) {
       "text",
       {
         x: 68,
-        y: 38,
+        y: 36,
         fill: PALETTE.spirit,
         "font-family": TYPOGRAPHY.mono,
         "font-size": "10",
@@ -1481,10 +1702,10 @@ function buildProjectCover(project, lang, isStatic) {
       "text",
       {
         x: 28,
-        y: 78,
+        y: 72,
         fill: PALETTE.soul,
         "font-family": TYPOGRAPHY.serif,
-        "font-size": "32",
+        "font-size": "31",
         "font-weight": "600",
       },
       project.title
@@ -1494,35 +1715,436 @@ function buildProjectCover(project, lang, isStatic) {
         "text",
         {
           x: 28,
-          y: 108 + i * 19,
+          y: 100 + i * 18,
           fill: PALETTE.mist,
           "font-family": TYPOGRAPHY.sans,
-          "font-size": "12",
+          "font-size": "11.5",
         },
         line
       )
     ),
+    ...specsIslandElems,
+    textEl(
+      "text",
+      {
+        x: 28,
+        y: 275,
+        fill: PALETTE.mist,
+        "font-family": TYPOGRAPHY.mono,
+        "font-size": "8",
+        "letter-spacing": "1.1",
+      },
+      "CORE STACK"
+    ),
     ...tagElems,
 
     // Center spine
-    el("line", { x1: 420, y1: 20, x2: 420, y2: 250, stroke: PALETTE.line, "stroke-width": "1" }),
+    el("line", { x1: 420, y1: 20, x2: 420, y2: 306, stroke: PALETTE.line, "stroke-width": "1" }),
     el("path", {
-      d: "M420 130 L425 135 L420 140 L415 135 Z",
+      d: "M420 158 L425 163 L420 168 L415 163 Z",
       fill: PALETTE.abyss,
       stroke: PALETTE.silk,
       "stroke-width": "1",
     }),
 
-    // Right schematic/telemetry zone
+    // Right schematic/telemetry zone + integrated stack/status sub-island
     ...renderProjectTelemetry(project, lang, isStatic),
+    ...rightFooterSubIsland,
   ];
 
   return svgDocument({
     idPrefix: `${project.coverBase}-${lang}${isStatic ? "-static" : ""}`,
     width: 960,
-    height: 270,
+    height: 326,
     title: `${project.index} / ${project.title} (${lang.toUpperCase()})`,
     desc: copy.coverAlt,
+    css,
+    body,
+    isStatic,
+  });
+}
+
+function buildExperienceIsland(lang, isStatic) {
+  const items = EXPERIENCE[lang];
+  const hdrLeft =
+    lang === "pt"
+      ? "§ 03 · TRAJETÓRIA & FORMAÇÃO // ILHAS"
+      : "§ 03 · BACKGROUND & EDUCATION // ISLANDS";
+  const hdrRight =
+    lang === "pt"
+      ? "SKAM TECNOLOGIA · INFRA TI · UNINASSAU (ADS)"
+      : "SKAM TECNOLOGIA · IT INFRA · UNINASSAU (ADS)";
+
+  const css = isStatic
+    ? ""
+    : `
+    .pulse-soft { animation: pulseSoft 4.2s ease-in-out infinite; }
+    @keyframes pulseSoft {
+      0%, 100% { opacity: 0.45; }
+      50% { opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }`;
+
+  const cards = items.flatMap((entry, idx) => {
+    const ix = 18 + idx * 310;
+    const iy = 48;
+    const iw = 304;
+    const ih = 154;
+    const accentHex = entry.accent === "spirit" ? PALETTE.spirit : PALETTE.silk;
+
+    const tagPills = [];
+    let tx = ix + 14;
+    for (const tag of entry.tags ?? []) {
+      const pw = Math.max(54, tag.length * 6.5 + 16);
+      tagPills.push(
+        el("rect", {
+          x: tx + 0.5,
+          y: iy + 122.5,
+          width: pw - 1,
+          height: 20,
+          fill: PALETTE.surface,
+          stroke: PALETTE.line,
+          "stroke-width": "1",
+        }),
+        textEl(
+          "text",
+          {
+            x: tx + 8,
+            y: iy + 135.5,
+            fill: PALETTE.mist,
+            "font-family": TYPOGRAPHY.mono,
+            "font-size": "8",
+            "letter-spacing": "0.8",
+          },
+          tag
+        )
+      );
+      tx += pw + 6;
+    }
+
+    return [
+      el("rect", {
+        x: ix + 0.5,
+        y: iy + 0.5,
+        width: iw - 1,
+        height: ih - 1,
+        fill: PALETTE.abyss,
+        stroke: entry.accent === "spirit" ? PALETTE.spirit : PALETTE.line,
+        "stroke-opacity": entry.accent === "spirit" ? "0.5" : "1",
+        "stroke-width": "1",
+      }),
+      el("rect", {
+        x: ix + 1,
+        y: iy + 1,
+        width: iw - 2,
+        height: 22,
+        fill: PALETTE.surface,
+      }),
+      el("line", {
+        x1: ix + 1,
+        y1: iy + 23,
+        x2: ix + iw - 1,
+        y2: iy + 23,
+        stroke: PALETTE.line,
+        "stroke-width": "1",
+      }),
+      el("rect", {
+        x: ix + 1,
+        y: iy + 1,
+        width: 2,
+        height: ih - 2,
+        fill: accentHex,
+        "fill-opacity": "0.8",
+      }),
+      textEl(
+        "text",
+        {
+          x: ix + 14,
+          y: iy + 15.5,
+          fill: accentHex,
+          "font-family": TYPOGRAPHY.mono,
+          "font-size": "8.5",
+          "letter-spacing": "1",
+        },
+        `${entry.index} · ${entry.badge}`
+      ),
+      textEl(
+        "text",
+        {
+          x: ix + 14,
+          y: iy + 46,
+          fill: PALETTE.soul,
+          "font-family": TYPOGRAPHY.serif,
+          "font-size": "21",
+          "font-weight": "600",
+        },
+        entry.company
+      ),
+      textEl(
+        "text",
+        {
+          x: ix + 14,
+          y: iy + 63,
+          fill: accentHex,
+          "font-family": TYPOGRAPHY.mono,
+          "font-size": "8.5",
+          "letter-spacing": "0.8",
+        },
+        entry.role.toUpperCase()
+      ),
+      ...(entry.lines ?? []).map((line, lIdx) =>
+        textEl(
+          "text",
+          {
+            x: ix + 14,
+            y: iy + 82 + lIdx * 14,
+            fill: PALETTE.mist,
+            "font-family": TYPOGRAPHY.sans,
+            "font-size": "10.5",
+          },
+          line
+        )
+      ),
+      ...tagPills,
+    ];
+  });
+
+  const body = [
+    el("rect", { x: 0, y: 0, width: 960, height: 220, fill: PALETTE.abyss }),
+    el("rect", {
+      x: 0.5,
+      y: 0.5,
+      width: 959,
+      height: 219,
+      fill: PALETTE.surface,
+      stroke: PALETTE.line,
+      "stroke-width": "1",
+    }),
+    cornerTicks(0.5, 0.5, 959, 219, 8),
+    el("line", { x1: 18, y1: 34, x2: 942, y2: 34, stroke: PALETTE.line, "stroke-width": "1" }),
+    textEl(
+      "text",
+      {
+        x: 20,
+        y: 23,
+        fill: PALETTE.silk,
+        "font-family": TYPOGRAPHY.mono,
+        "font-size": "9.5",
+        "letter-spacing": "1.4",
+      },
+      hdrLeft
+    ),
+    textEl(
+      "text",
+      {
+        x: 940,
+        y: 23,
+        fill: PALETTE.mist,
+        "font-family": TYPOGRAPHY.mono,
+        "font-size": "9",
+        "letter-spacing": "1.1",
+        "text-anchor": "end",
+      },
+      hdrRight
+    ),
+    ...cards,
+  ];
+
+  const desc = items.map((e) => `${e.company} (${e.role}): ${e.description}`).join(" | ");
+  return svgDocument({
+    idPrefix: `experience-${lang}${isStatic ? "-static" : ""}`,
+    width: 960,
+    height: 220,
+    title: `${PROFILE.name} — ${hdrLeft}`,
+    desc,
+    css,
+    body,
+    isStatic,
+  });
+}
+
+function buildBeyondIsland(lang, isStatic) {
+  const data = BEYOND_CODE[lang];
+  const hdrLeft =
+    lang === "pt"
+      ? "§ 04 · ALÉM DO CÓDIGO // ILHAS DE REFERÊNCIA"
+      : "§ 04 · BEYOND CODE // REFERENCE ISLANDS";
+  const hdrRight = BEYOND_CODE.terminalHeader;
+
+  const css = isStatic
+    ? ""
+    : `
+    .pulse-soft { animation: pulseSoft 4.2s ease-in-out infinite; }
+    @keyframes pulseSoft {
+      0%, 100% { opacity: 0.45; }
+      50% { opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }`;
+
+  const cards = (data.islands ?? []).flatMap((isl, idx) => {
+    const ix = 18 + idx * 310;
+    const iy = 48;
+    const iw = 304;
+    const ih = 164;
+    const accentHex = isl.accent === "spirit" ? PALETTE.spirit : PALETTE.silk;
+
+    const tagPills = [];
+    let tx = ix + 14;
+    let ty = iy + 96;
+    for (const tag of isl.tags ?? []) {
+      const pw = Math.min(276, Math.max(54, tag.length * 6.2 + 16));
+      if (tx + pw > ix + iw - 12) {
+        tx = ix + 14;
+        ty += 24;
+      }
+      if (ty > iy + 136) break;
+      tagPills.push(
+        el("rect", {
+          x: tx + 0.5,
+          y: ty + 0.5,
+          width: pw - 1,
+          height: 19,
+          fill: PALETTE.surface,
+          stroke: PALETTE.line,
+          "stroke-width": "1",
+        }),
+        textEl(
+          "text",
+          {
+            x: tx + 8,
+            y: ty + 13,
+            fill: PALETTE.soul,
+            "fill-opacity": "0.88",
+            "font-family": TYPOGRAPHY.mono,
+            "font-size": "8",
+            "letter-spacing": "0.6",
+          },
+          tag
+        )
+      );
+      tx += pw + 6;
+    }
+
+    return [
+      el("rect", {
+        x: ix + 0.5,
+        y: iy + 0.5,
+        width: iw - 1,
+        height: ih - 1,
+        fill: PALETTE.abyss,
+        stroke: PALETTE.line,
+        "stroke-width": "1",
+      }),
+      el("rect", {
+        x: ix + 1,
+        y: iy + 1,
+        width: iw - 2,
+        height: 22,
+        fill: PALETTE.surface,
+      }),
+      el("line", {
+        x1: ix + 1,
+        y1: iy + 23,
+        x2: ix + iw - 1,
+        y2: iy + 23,
+        stroke: PALETTE.line,
+        "stroke-width": "1",
+      }),
+      el("rect", {
+        x: ix + 1,
+        y: iy + 1,
+        width: 2,
+        height: ih - 2,
+        fill: accentHex,
+        "fill-opacity": "0.8",
+      }),
+      textEl(
+        "text",
+        {
+          x: ix + 14,
+          y: iy + 15.5,
+          fill: accentHex,
+          "font-family": TYPOGRAPHY.mono,
+          "font-size": "8.5",
+          "letter-spacing": "1",
+        },
+        `${isl.index} · ${isl.label}`
+      ),
+      ...(isl.lines ?? []).map((line, lIdx) =>
+        textEl(
+          "text",
+          {
+            x: ix + 14,
+            y: iy + 44 + lIdx * 15,
+            fill: PALETTE.mist,
+            "font-family": TYPOGRAPHY.sans,
+            "font-size": "10.5",
+          },
+          line
+        )
+      ),
+      ...tagPills,
+    ];
+  });
+
+  const body = [
+    el("rect", { x: 0, y: 0, width: 960, height: 228, fill: PALETTE.abyss }),
+    el("rect", {
+      x: 0.5,
+      y: 0.5,
+      width: 959,
+      height: 227,
+      fill: PALETTE.surface,
+      stroke: PALETTE.line,
+      "stroke-width": "1",
+    }),
+    cornerTicks(0.5, 0.5, 959, 227, 8),
+    el("line", { x1: 18, y1: 34, x2: 942, y2: 34, stroke: PALETTE.line, "stroke-width": "1" }),
+    textEl(
+      "text",
+      {
+        x: 20,
+        y: 23,
+        fill: PALETTE.silk,
+        "font-family": TYPOGRAPHY.mono,
+        "font-size": "9.5",
+        "letter-spacing": "1.4",
+      },
+      hdrLeft
+    ),
+    textEl(
+      "text",
+      {
+        x: 940,
+        y: 23,
+        fill: PALETTE.spirit,
+        "font-family": TYPOGRAPHY.mono,
+        "font-size": "9",
+        "letter-spacing": "1.1",
+        "text-anchor": "end",
+      },
+      hdrRight
+    ),
+    ...cards,
+  ];
+
+  const desc = data.items.map((i) => `${i.label}: ${i.detail}`).join(" | ");
+  return svgDocument({
+    idPrefix: `beyond-${lang}${isStatic ? "-static" : ""}`,
+    width: 960,
+    height: 228,
+    title: `${PROFILE.name} — ${hdrLeft}`,
+    desc,
     css,
     body,
     isStatic,
@@ -1752,6 +2374,8 @@ function main() {
   const manifest = {
     palette: PALETTE,
     heroes: { pt: {}, en: {} },
+    experience: { pt: {}, en: {} },
+    beyond: { pt: {}, en: {} },
     footers: { pt: {}, en: {} },
     links: {},
     projects: {},
@@ -1792,7 +2416,7 @@ function main() {
     };
   }
 
-  // 2. Footers (4)
+  // 2. Footers, Experience Islands & Beyond Islands
   for (const lang of ["pt", "en"]) {
     const footerAnim = `assets/profile/footer-${lang}.svg`;
     const footerStatic = `assets/profile/footer-${lang}-static.svg`;
@@ -1803,6 +2427,24 @@ function main() {
     manifest.footers[lang] = {
       animated: footerAnim,
       static: footerStatic,
+    };
+
+    const expAnim = `assets/profile/experience-${lang}.svg`;
+    const expStatic = `assets/profile/experience-${lang}-static.svg`;
+    register(expAnim, buildExperienceIsland(lang, false), "experience", false);
+    register(expStatic, buildExperienceIsland(lang, true), "experience", true);
+    manifest.experience[lang] = {
+      animated: expAnim,
+      static: expStatic,
+    };
+
+    const beyondAnim = `assets/profile/beyond-${lang}.svg`;
+    const beyondStatic = `assets/profile/beyond-${lang}-static.svg`;
+    register(beyondAnim, buildBeyondIsland(lang, false), "beyond", false);
+    register(beyondStatic, buildBeyondIsland(lang, true), "beyond", true);
+    manifest.beyond[lang] = {
+      animated: beyondAnim,
+      static: beyondStatic,
     };
   }
 

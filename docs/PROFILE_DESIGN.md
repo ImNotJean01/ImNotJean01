@@ -39,10 +39,12 @@ Asset dimensions:
 
 | Asset Group | Count | Dimensions | Notes |
 |---|---|---|---|
-| Heroes | 8 | `960×320` (desktop), `440×360` (mobile) | PT/EN × Animated/Static |
+| Heroes | 8 | `960×356` (desktop), `440×360` (mobile) | PT/EN × Animated/Static, with 3 internal summary mini-islands |
+| Experience & Education Islands | 4 | `960×220` | PT/EN × Animated/Static, 3 internal sub-islands |
+| Beyond Code Islands | 4 | `960×228` | PT/EN × Animated/Static, 3 internal sub-islands + tags |
 | Footers | 4 | `960×148` | PT/EN × Animated/Static |
 | Link / Nav / Action Buttons | 24 | `W×44` (`32px` visual surface at `y=6..38`) | Motion-free |
-| Project Covers (`01`–`05`) | 20 | `960×270` | PT/EN × Animated/Static |
+| Project Covers (`01`–`05`) | 20 | `960×326` | PT/EN × Animated/Static, with internal specs & stack sub-islands |
 | Stack Cards (4 domains) | 25 | `142×60` | Motion-free, uniform width for natural wrapping |
 
 ## 4. Determinism & LF Normalization
