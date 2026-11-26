@@ -1,81 +1,5 @@
 {
-  "beyond": {
-    "en": {
-      "animated": "assets/profile/beyond-en.svg",
-      "static": "assets/profile/beyond-en-static.svg"
-    },
-    "pt": {
-      "animated": "assets/profile/beyond-pt.svg",
-      "static": "assets/profile/beyond-pt-static.svg"
-    }
-  },
-  "experience": {
-    "en": {
-      "animated": "assets/profile/experience-en.svg",
-      "static": "assets/profile/experience-en-static.svg"
-    },
-    "pt": {
-      "animated": "assets/profile/experience-pt.svg",
-      "static": "assets/profile/experience-pt-static.svg"
-    }
-  },
   "files": {
-    "assets/profile/beyond-en-static.svg": {
-      "bytes": 9431,
-      "hash8": "47e9b40e",
-      "kind": "beyond",
-      "sha256": "47e9b40e7077270d49c33201a11612683c0e6e5f982230b55c564e7b9e9f649b",
-      "static": true
-    },
-    "assets/profile/beyond-en.svg": {
-      "bytes": 9757,
-      "hash8": "529375e7",
-      "kind": "beyond",
-      "sha256": "529375e766c4bac13d479eefa116b96d2ece4e3bdb2d2ba4a5a7c490b1fcc7d9",
-      "static": false
-    },
-    "assets/profile/beyond-pt-static.svg": {
-      "bytes": 9529,
-      "hash8": "aaeaf74a",
-      "kind": "beyond",
-      "sha256": "aaeaf74ae594f42b075ed4b66c5948371ca029258a4e15ffd7c014fbc650d1c2",
-      "static": true
-    },
-    "assets/profile/beyond-pt.svg": {
-      "bytes": 9855,
-      "hash8": "73b5b36b",
-      "kind": "beyond",
-      "sha256": "73b5b36bb33ca4ca9222670c1fa84cffd80cb0f95b4a49617fef15e7ba8c10f4",
-      "static": false
-    },
-    "assets/profile/experience-en-static.svg": {
-      "bytes": 9145,
-      "hash8": "030c7c62",
-      "kind": "experience",
-      "sha256": "030c7c620962d2e1f14c1e8ffb0c02073b60a3fe934386ddb6379a93a5e41ce1",
-      "static": true
-    },
-    "assets/profile/experience-en.svg": {
-      "bytes": 9471,
-      "hash8": "10772f9f",
-      "kind": "experience",
-      "sha256": "10772f9fb0a01f69df999da6b9d7a817244da88eaff4920b8288c1bf4a239bdb",
-      "static": false
-    },
-    "assets/profile/experience-pt-static.svg": {
-      "bytes": 9207,
-      "hash8": "3eb7d964",
-      "kind": "experience",
-      "sha256": "3eb7d96467860d75a3ad717163f354a1dc0a29139208b12efaee823605fa7d22",
-      "static": true
-    },
-    "assets/profile/experience-pt.svg": {
-      "bytes": 9533,
-      "hash8": "0671e48b",
-      "kind": "experience",
-      "sha256": "0671e48bf4c7e7aa8525a18829cb510cfae5955bb98a8d193eed84806caa2462",
-      "static": false
-    },
     "assets/profile/footer-en-static.svg": {
       "bytes": 3620,
       "hash8": "e48cb003",
@@ -119,17 +43,17 @@
       "static": false
     },
     "assets/profile/hero-en-static.svg": {
-      "bytes": 9482,
-      "hash8": "70a0f5e7",
+      "bytes": 6885,
+      "hash8": "67e89c3f",
       "kind": "hero",
-      "sha256": "70a0f5e72c2cf79fb0453814bc20075d8d1b4ba362152c75543fab2032f4275d",
+      "sha256": "67e89c3f9b86046dfdf334a2710c8bafb69e4b2443c66a1f329cf66a5737ba7c",
       "static": true
     },
     "assets/profile/hero-en.svg": {
-      "bytes": 10489,
-      "hash8": "c40eab82",
+      "bytes": 7892,
+      "hash8": "56fb22e0",
       "kind": "hero",
-      "sha256": "c40eab822bde867630d35b2f3e3741cf5075b21929944577db8affddc156e459",
+      "sha256": "56fb22e079ca2b4759fbce15d4707d89aab5c8746e4ee31784c0c039f56b3f52",
       "static": false
     },
     "assets/profile/hero-pt-mobile-static.svg": {
@@ -147,17 +71,17 @@
       "static": false
     },
     "assets/profile/hero-pt-static.svg": {
-      "bytes": 9507,
-      "hash8": "cfb13aef",
+      "bytes": 6904,
+      "hash8": "71d37a50",
       "kind": "hero",
-      "sha256": "cfb13aefd1d05920638cbf252517a2579a7756db067e67ae8dfbbcf24f616ef5",
+      "sha256": "71d37a504009e3e35262412921ed8cc3009f0955160d3c9e667f83b8819fedad",
       "static": true
     },
     "assets/profile/hero-pt.svg": {
-      "bytes": 10514,
-      "hash8": "9b4ddc39",
+      "bytes": 7911,
+      "hash8": "0c7aa128",
       "kind": "hero",
-      "sha256": "9b4ddc39e7bb46939763b80472c06ce45c69af4fbbc67ca68bb9721c054f9269",
+      "sha256": "0c7aa1284b0341bd9f61bd2250c2b0dca39f1b724e30c949611b3a9b07bdbef0",
       "static": false
     },
     "assets/profile/links/action-live-en.svg": {
@@ -329,143 +253,143 @@
       "static": true
     },
     "assets/profile/projects/project-01-psychat-en-static.svg": {
-      "bytes": 9223,
-      "hash8": "b2a6f404",
+      "bytes": 6901,
+      "hash8": "5457f8a9",
       "kind": "project",
-      "sha256": "b2a6f40444a1a1ade0a49150288ec7a2f50db96214e71068d84b5628f9a7933d",
+      "sha256": "5457f8a973b6a11f2308352d0ab79d3ad56c4cb38da1819f7cf60668fcddeb94",
       "static": true
     },
     "assets/profile/projects/project-01-psychat-en.svg": {
-      "bytes": 9751,
-      "hash8": "4ccd7db1",
+      "bytes": 7429,
+      "hash8": "13827d75",
       "kind": "project",
-      "sha256": "4ccd7db1d62004fc85342316bf0228f656a9ded0b6aeeabb527aebc5ed79341b",
+      "sha256": "13827d752e545b016a7446596630f71076ddfc039f31f21767f67e891fe03a70",
       "static": false
     },
     "assets/profile/projects/project-01-psychat-pt-static.svg": {
-      "bytes": 9291,
-      "hash8": "b451b79d",
+      "bytes": 6948,
+      "hash8": "bf1d68d7",
       "kind": "project",
-      "sha256": "b451b79d528ac08ece84d928859a35e3ad9d1d592daf49bf397362d2d2e851b2",
+      "sha256": "bf1d68d7ad39145f197e1b0afb28bee61e3a95b70507d64badf5e31496e1c3c7",
       "static": true
     },
     "assets/profile/projects/project-01-psychat-pt.svg": {
-      "bytes": 9819,
-      "hash8": "c777a4a0",
+      "bytes": 7476,
+      "hash8": "b2ffb26c",
       "kind": "project",
-      "sha256": "c777a4a0232037e0ea6a1feb251f2cc7d517b422bc20776f631714fa3ee8db95",
+      "sha256": "b2ffb26c1f14a92ffce9cda4d759e71d0ad0d490b846e3c8090a541261fb414a",
       "static": false
     },
     "assets/profile/projects/project-02-minhas-financas-en-static.svg": {
-      "bytes": 10233,
-      "hash8": "ebf559d2",
+      "bytes": 7925,
+      "hash8": "1c5c46e3",
       "kind": "project",
-      "sha256": "ebf559d245ce33ba3ac31ea1c5ef033f0bcc0d6a34210a09156bdf2de719d871",
+      "sha256": "1c5c46e3539b34ad5264220a41f50bd8b4ee25981762480107a6140ce7172d79",
       "static": true
     },
     "assets/profile/projects/project-02-minhas-financas-en.svg": {
-      "bytes": 10742,
-      "hash8": "90b88fbb",
+      "bytes": 8434,
+      "hash8": "ae4f7883",
       "kind": "project",
-      "sha256": "90b88fbb4a325566a1cfb3a23af34a8b9ca6b510b1a359080ab2a52626629e4c",
+      "sha256": "ae4f7883d8aa1b6948cf6a98d1ee2e022a495316711b0f24fcb12e1fcf3e4859",
       "static": false
     },
     "assets/profile/projects/project-02-minhas-financas-pt-static.svg": {
-      "bytes": 10295,
-      "hash8": "2f1a96da",
+      "bytes": 7955,
+      "hash8": "4f913267",
       "kind": "project",
-      "sha256": "2f1a96dacf8494b32230d19ceb6d30c4307055d45a78a14e2181db023f6fe715",
+      "sha256": "4f913267e0cb4d66955d5d0e5dc64411014c20db23787907031dc19433ded2dc",
       "static": true
     },
     "assets/profile/projects/project-02-minhas-financas-pt.svg": {
-      "bytes": 10804,
-      "hash8": "eb0e49a5",
+      "bytes": 8464,
+      "hash8": "7e7a4040",
       "kind": "project",
-      "sha256": "eb0e49a50e55de3b88cbe07617e12e77faf8a550320c36fe2bc610b14042fa6e",
+      "sha256": "7e7a40401f26cc2297ec8966ddf8ce84ae240b995b5c06df2463b93645e3d1c8",
       "static": false
     },
     "assets/profile/projects/project-03-nexo-rh-en-static.svg": {
-      "bytes": 10792,
-      "hash8": "33bd30a1",
+      "bytes": 8459,
+      "hash8": "4ea8ad78",
       "kind": "project",
-      "sha256": "33bd30a1f48891809d93b41a37e490495c6932346089d919fd7273fa86abde02",
+      "sha256": "4ea8ad78ce4d17deeb5fec912626132507ba970194f326d481cfd1beac0ade18",
       "static": true
     },
     "assets/profile/projects/project-03-nexo-rh-en.svg": {
-      "bytes": 11301,
-      "hash8": "e92c24dd",
+      "bytes": 8968,
+      "hash8": "fbe00825",
       "kind": "project",
-      "sha256": "e92c24dd8c4006882bdce0aee7b57020d8411349f088b98ed710690898ae8f6e",
+      "sha256": "fbe00825b8598b6f79482f7f16e04f78fba706bda049463ae6de60c07187844d",
       "static": false
     },
     "assets/profile/projects/project-03-nexo-rh-pt-static.svg": {
-      "bytes": 10818,
-      "hash8": "52870686",
+      "bytes": 8468,
+      "hash8": "7220444e",
       "kind": "project",
-      "sha256": "52870686ed5088244ae9514356b2e0b259c43e48d083644d5c40641f7827f634",
+      "sha256": "7220444eee2f0e8c245cb1ed845166c1bc93bb2fcc5df4e880e71b2551b55580",
       "static": true
     },
     "assets/profile/projects/project-03-nexo-rh-pt.svg": {
-      "bytes": 11327,
-      "hash8": "8faaed99",
+      "bytes": 8977,
+      "hash8": "a4475226",
       "kind": "project",
-      "sha256": "8faaed994f5bbabdf8d77f919b22ae08f6c3bf381a2ee610f7971eaf317fbf41",
+      "sha256": "a4475226c658447dea7786077ab68d32ccd454b2a46b2e4bce839dcd746e56a3",
       "static": false
     },
     "assets/profile/projects/project-04-media-hub-en-static.svg": {
-      "bytes": 9567,
-      "hash8": "0ab2e3d3",
+      "bytes": 7245,
+      "hash8": "4658ac55",
       "kind": "project",
-      "sha256": "0ab2e3d346f01f053ae3d38c7345e9761bb1d35334535516e394c0a662188b3a",
+      "sha256": "4658ac555f7ba78527465ad725d16fd3518967da376fe525860fa757604d3fbe",
       "static": true
     },
     "assets/profile/projects/project-04-media-hub-en.svg": {
-      "bytes": 10093,
-      "hash8": "cd56b284",
+      "bytes": 7771,
+      "hash8": "6b84d8b8",
       "kind": "project",
-      "sha256": "cd56b2845fdb910ae9974b55b358cc39f02ad83c200c21420270d8d124a18a64",
+      "sha256": "6b84d8b8fc7ab79b150b47a17136fdd64ae46bac6724b09139800b04c9310272",
       "static": false
     },
     "assets/profile/projects/project-04-media-hub-pt-static.svg": {
-      "bytes": 9595,
-      "hash8": "a231e146",
+      "bytes": 7256,
+      "hash8": "05dc8098",
       "kind": "project",
-      "sha256": "a231e1463a9b34eb092bc30aa77f2b77e13c71a965e8f1f89aea01e55e978271",
+      "sha256": "05dc8098e73e8b2e04d72c7f86e7175361fc44c5d5569c2dfba0cc4a6ef68d5d",
       "static": true
     },
     "assets/profile/projects/project-04-media-hub-pt.svg": {
-      "bytes": 10121,
-      "hash8": "23e24a61",
+      "bytes": 7782,
+      "hash8": "781a7994",
       "kind": "project",
-      "sha256": "23e24a61381f9ba4e3315d3448310eccf34628eebf2aafbe87f70c427666656f",
+      "sha256": "781a7994b13f24ca800ef530eaa23a1e5ef8e65920220ba5241f8d4e845b825e",
       "static": false
     },
     "assets/profile/projects/project-05-rpg-table-en-static.svg": {
-      "bytes": 11259,
-      "hash8": "5f4a885b",
+      "bytes": 8905,
+      "hash8": "5c9d6798",
       "kind": "project",
-      "sha256": "5f4a885bb5db06123367f3adb013879662a778e72c143095416f8c2b6c1876c7",
+      "sha256": "5c9d6798ab72ba12a4b309dce5a997d038bb6132dcb352b82f7c45dff9d304f8",
       "static": true
     },
     "assets/profile/projects/project-05-rpg-table-en.svg": {
-      "bytes": 11787,
-      "hash8": "446ce3cd",
+      "bytes": 9433,
+      "hash8": "510fbf3a",
       "kind": "project",
-      "sha256": "446ce3cd5177526ae54e12079ddaebca8d14f4638e682191a659150c92be2d8a",
+      "sha256": "510fbf3aacd554b2895290b147d4af5b71c1f90dd6da21b889412594c1802f21",
       "static": false
     },
     "assets/profile/projects/project-05-rpg-table-pt-static.svg": {
-      "bytes": 11273,
-      "hash8": "bacdf920",
+      "bytes": 8915,
+      "hash8": "07f33f5b",
       "kind": "project",
-      "sha256": "bacdf920e36568f0f536ec872993358eeb965a91e4d0491c1e4250f39ec988a2",
+      "sha256": "07f33f5b216405fc8ac32eb32f8e31dc62708db15c725b62bec9104046a959d6",
       "static": true
     },
     "assets/profile/projects/project-05-rpg-table-pt.svg": {
-      "bytes": 11801,
-      "hash8": "c8e6fd7b",
+      "bytes": 9443,
+      "hash8": "947e644b",
       "kind": "project",
-      "sha256": "c8e6fd7b4bd1772ab510b5db487ef337b92c51f3efa6be1f52220e1bae9edbe6",
+      "sha256": "947e644b3470c1bde4465cf9ae8ebc12944ac65b59c3fe28c3cd4c87346d8007",
       "static": false
     },
     "assets/profile/stack/apache-hop.svg": {
